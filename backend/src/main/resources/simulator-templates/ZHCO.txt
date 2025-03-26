@@ -1,0 +1,17 @@
+ZHCO;
+
+LOADING PROGRAM VERSION 2.10-0
+
+MSCi      {{MSS_NAME}}               {{DATE}}  {{TIME}}
+
+OUTPUT ALL CELL LIST
+
+CELL LIST NAME       CELL LIST ID
+---------------      ------------
+{{#each celllists}}{{this.name}}                  {{this.id}}
+{{/each}}
+COMMAND EXECUTED
+
+
+CELL LIST HANDLING COMMAND <HC_>
+<  

@@ -1,0 +1,1056 @@
+ZEPO::IDE;
+
+
+LOADING PROGRAM VERSION 17.10-0
+
+MSCi      DEMO-MSS-02               2024-09-27  11:27:08
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS53003                     NUMBER  :53003
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC300                       LAC     :300
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :53003
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS53004                     NUMBER  :53004
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC300                       LAC     :300
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :53004
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS58000                     NUMBER  :58000
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1700                      LAC     :1700
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :58000
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS58003                     NUMBER  :58003
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1700                      LAC     :1700
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :58003
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS59990                     NUMBER  :59990
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1700                      LAC     :1700
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :59990
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS59991                     NUMBER  :59991
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1700                      LAC     :1700
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :59991
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS59995                     NUMBER  :59995
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1700                      LAC     :1700
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :59995
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS59996                     NUMBER  :59996
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1700                      LAC     :1700
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :59996
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS60000                     NUMBER  :60000
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC2000                      LAC     :2000
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :60000
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS60001                     NUMBER  :60001
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC2000                      LAC     :2000
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :60001
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS60002                     NUMBER  :60002
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC2010                      LAC     :2010
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :60002
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS60003                     NUMBER  :60003
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC2020                      LAC     :2020
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :60003
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS60004                     NUMBER  :60004
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC2020                      LAC     :2020
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :60004
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS55505                     NUMBER  :55505
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333                      LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :55505
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS55510                     NUMBER  :55510
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333                      LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :55510
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS55531                     NUMBER  :55531
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333                      LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :55531
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS55533                     NUMBER  :55533
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333                      LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :55533
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS55003                     NUMBER  :55003
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444                      LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :55003
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS55002                     NUMBER  :55002
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444                      LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :55002
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS55001                     NUMBER  :55001
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444                      LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :55001
+BTS ADMINISTRATIVE STATE ....................... :LOCKED  
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS55558                     NUMBER  :55558
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444                      LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :55558
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS55556                     NUMBER  :55556
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444                      LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :55556
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS55555                     NUMBER  :55555
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444                      LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :55555
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS53002                     NUMBER  :53002
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC100                       LAC     :100
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :53002
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS53001                     NUMBER  :53001
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC100                       LAC     :100
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :53001
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS50020                     NUMBER  :50020
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444                      LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :50020
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS9900                      NUMBER  :9900
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC0999                      LAC     :999
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :9900
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS9901                      NUMBER  :9901
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC0999                      LAC     :999
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :9901
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS2000                      NUMBER  :2000
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :2000
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3000                      NUMBER  :3000
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3000
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3010                      NUMBER  :3010
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3010
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS1000                      NUMBER  :1000
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :1000
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3002                      NUMBER  :3002
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3002
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3012                      NUMBER  :3012
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3012
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS1010                      NUMBER  :1010
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :1010
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS50001                     NUMBER  :50001
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50001
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS50004                     NUMBER  :50004
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50004
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS50007                     NUMBER  :50007
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50007
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS50008                     NUMBER  :50008
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50008
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS50009                     NUMBER  :50009
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50009
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS50010                     NUMBER  :50010
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50010
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS50101                     NUMBER  :50101
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50101
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS50104                     NUMBER  :50104
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50104
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS50105                     NUMBER  :50105
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50105
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS1002                      NUMBER  :1002
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :1002
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS1012                      NUMBER  :1012
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :1012
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS1022                      NUMBER  :1022
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :1022
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS1032                      NUMBER  :1032
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :1032
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS1004                      NUMBER  :1004
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :1004
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS1014                      NUMBER  :1014
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :1014
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS1005                      NUMBER  :1005
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :1005
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS1001                      NUMBER  :1001
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :1001
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS1011                      NUMBER  :1011
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :1011
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS53106                     NUMBER  :53106
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC300                       LAC     :300
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :53106
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS53107                     NUMBER  :53107
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC300                       LAC     :300
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :53107
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS9999                      NUMBER  :9999
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :9999
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3004                      NUMBER  :3004
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3004
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS2010                      NUMBER  :2010
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :2010
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS2002                      NUMBER  :2002
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :2002
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS2012                      NUMBER  :2012
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :2012
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS2022                      NUMBER  :2022
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :2022
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS2032                      NUMBER  :2032
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :2032
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS2004                      NUMBER  :2004
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :2004
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS2014                      NUMBER  :2014
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :2014
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3014                      NUMBER  :3014
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3014
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3022                      NUMBER  :3022
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3022
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3032                      NUMBER  :3032
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3032
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3015                      NUMBER  :3015
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3015
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3003                      NUMBER  :3003
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3003
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3013                      NUMBER  :3013
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3013
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3023                      NUMBER  :3023
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3023
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3033                      NUMBER  :3033
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3033
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3694                      NUMBER  :3694
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3694
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS3690                      NUMBER  :3690
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3690
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS50106                     NUMBER  :50106
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50106
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS50107                     NUMBER  :50107
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50107
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS30001                     NUMBER  :30001
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30001
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS30002                     NUMBER  :30002
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30002
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS30005                     NUMBER  :30005
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30005
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS30007                     NUMBER  :30007
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30007
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS30101                     NUMBER  :30101
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30101
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS30104                     NUMBER  :30104
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30104
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS30105                     NUMBER  :30105
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30105
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS30106                     NUMBER  :30106
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30106
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS30107                     NUMBER  :30107
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30107
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :BTS1PANI                     NUMBER  :55500
+BSC   NAME : -                           NUMBER  : -
+LA    NAME :LA5550PANI                   LAC     :5555
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :55500
+BTS ADMINISTRATIVE STATE ....................... :LOCKED  
+
+
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :LDA65102                     NUMBER  :65102
+BSC   NAME : -                           NUMBER  : -
+LA    NAME :LAC555PANI                   LAC     :555
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :65102
+BTS ADMINISTRATIVE STATE ....................... :LOCKED  
+
+
+COMMAND EXECUTED
+
+
+BTS AND SA HANDLING COMMAND <EP_>
+<  

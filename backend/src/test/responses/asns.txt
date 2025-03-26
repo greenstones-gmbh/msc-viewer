@@ -1,0 +1,26 @@
+ZRUI;
+
+LOADING PROGRAM VERSION 13.4-0
+
+EXECUTION STARTED
+
+
+MSCi      DEMO-MSS-02               2024-09-23  23:29:15
+
+INTERROGATING AREA SERVICE NUMBERS
+
+AREA SERVICE             ROUTING  SERVICE  ANALYSIS  TYPE OF  SERVICE
+NUMBER                   ZONE     TYPE     TREE      NUMBER   NUMBER
+                                           IN CM              INDEX
+
+49112800890                999      0        112     INTERNAT     1    
+49185901999               1999      0        112     INTERNAT     2    
+49185903999               1002      0        112     INTERNAT     3    
+49185902999               1001      0        112     INTERNAT     4    
+49185919800               1800      0        112     INTERNAT     5    
+
+COMMAND EXECUTED
+
+
+AREA SERVICE NUMBER HANDLING COMMAND <RU_>
+<  

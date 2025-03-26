@@ -1,0 +1,79 @@
+ZHGO:GCREF=85004507:::STYPE=VGCS;
+
+LOADING PROGRAM VERSION 2.34-0
+
+MSCi      DEMO-MSS-02               2024-10-04  18:50:24
+
+OUTPUT GROUP CALL REFERENCE
+
+GROUP CALL REFERENCE .......... (GCREF)..:85004507
+
+SERVICE TYPE .................. (STYPE)..:VOICE GROUP CALL SERVICE
+
+GROUP CALL AREA NAME .......... (GCAN)...:GCAN85004
+GROUP CALL AREA CODE .......... (GCAC)...:85004
+
+GROUP NAME .................... (GRPNAME):GRPNAME507
+GROUP ID ...................... (GRID)...:507
+
+NETWORK PARAMETERS:
+  MSS ROLE .................... (MSSROLE):ANCHOR
+  ANCHOR VIRTUAL MGW NAME ..... (MGWNAME):-
+  NO ACTIVITY TIMER ........... (NOACTMR):180 SEC
+  TONE BEFORE NOACTMR EXPIRES . (WARNING):DISABLED
+  CC+NDC OF A-MSS ............. (ACCANDC):4911
+  EMLPP PRIORITY .............. (EMLPP)..:3
+  ACKNOWLEDGEMENT FLAG ........ (ACK)....:N
+
+A INTERFACE PARAMETERS:
+  PREFERRED CODEC LIST ........ (APCL)...:GSMFR
+  TALKER CHANNEL MODE ......... (TCHM)...:ONE
+  ER-GSM BAND USAGE ........... (ERGSM)..:N
+
+TEMPORARY DATA:
+  ORIGINATING CELL ID................... :-
+  IMSI OF INITIATING SERVICE SUBSCRIBER. :-
+  ONGOING CALL.......................... :NOT RELIABLE
+  GROUP CALL SETUP TIME................. :-
+
+INITIATOR CELL LISTS OF THE GROUP IN THE GROUP CALL AREA:
+
+CELL LIST NAME:    CLID:
+---------------    -----
+
+DISPATCHER LIST:
+
+NUMBER (E.164 NP):    TON:  ALERT: ESTAB: JOIN:  REL:   JTONE: LTONE: VBSTALK:
+-------------------   ----  -----  -----  -----  -----  -----  -----  -------
+491129406850045237     INT    Y      Y      Y      Y      N      N       -
+491129406850045007     INT    Y      Y      Y      Y      N      N       -
+491129406850045107     INT    Y      Y      Y      Y      N      N       -
+491129406850045207     INT    Y      Y      Y      Y      N      N       -
+491129406850045307     INT    Y      Y      Y      Y      N      N       -
+491129406850045407     INT    Y      Y      Y      Y      N      N       -
+491129406850045507     INT    Y      Y      Y      Y      N      N       -
+491129406850045607     INT    Y      Y      Y      Y      N      N       -
+491129406850045707     INT    Y      Y      Y      Y      N      N       -
+491129406850045807     INT    Y      Y      Y      Y      N      N       -
+491129406850045907     INT    Y      Y      Y      Y      N      N       -
+491129406850045037     INT    Y      Y      Y      Y      N      N       -
+491129406850045137     INT    Y      Y      Y      Y      N      N       -
+04179007202            UNK    Y      Y      Y      Y      Y      Y       -
+
+VOICE RECORDER LIST:
+
+NUMBER (E.164 NP):    TON:
+------------------    ----
+49112999921            INT
+
+MSS LIST:
+
+NUMBER (E.164 NP):    TON:    ROLE:   MPID:    MSS POOL NAME:
+------------------    ----   ------   -----   ---------------
+49112800032            INT   ANCHOR       0   R4MSSPOOL      
+
+COMMAND EXECUTED
+
+
+GROUP AND GROUP CALL REFERENCE HANDLING COMMAND <HG_>
+<  

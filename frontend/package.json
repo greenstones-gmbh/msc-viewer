@@ -1,0 +1,69 @@
+{
+  "name": "msc-viewer",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://greenstones.de/msc-viewer",
+  "dependencies": {
+    "@auth0/auth0-react": "^2.2.4",
+    "@azure/msal-browser": "^3.13.0",
+    "@azure/msal-react": "^2.0.15",
+    "@clickapp/qui-bootstrap": "^0.0.7",
+    "@clickapp/qui-core": "^0.0.6",
+    "@neo4j-nvl/react": "^0.3.5",
+    "@react-keycloak/web": "^3.4.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.86",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "bootstrap": "^5.3.3",
+    "classnames": "^2.5.1",
+    "date-fns": "^4",
+    "file-saver": "^2.0.5",
+    "http-proxy-middleware": "^3.0.3",
+    "jwt-decode": "^4.0.0",
+    "keycloak-js": "^24.0.3",
+    "oidc-client-ts": "^3.0.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.1",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.3",
+    "react-icons": "5.4.0",
+    "react-oidc-context": "^3.1.0",
+    "react-router-dom": "^6.22.2",
+    "react-scripts": "5.0.1",
+    "recharts": "^2.12.7",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "webpack": "5.95.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "up-qui": "npm rm  @clickapp/qui-bootstrap  @clickapp/qui-core && rm -rf node_modules/.cache/  && npm i  @clickapp/qui-core @clickapp/qui-bootstrap  --registry http://localhost:4873 && npm start",
+    "up-local-qui": "npm rm @clickapp/qui-bootstrap  @clickapp/qui-core && rm -rf node_modules/.cache/  && npm i  @clickapp/qui-core @clickapp/qui-bootstrap  --registry http://localhost:4873 && npm start",
+    "up-global-qui": "npm rm @clickapp/qui-bootstrap  @clickapp/qui-core && rm -rf node_modules/.cache/  && npm i  @clickapp/qui-core @clickapp/qui-bootstrap"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

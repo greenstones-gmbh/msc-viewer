@@ -1,0 +1,31 @@
+ZEPJ:ALL;
+
+
+LOADING PROGRAM VERSION 17.10-0
+
+MSCi      {{MSS_NAME}}               {{DATE}}  {{TIME}}
+{{#each ltes}}
+OUTPUT LTE CONFIGURATION
+------------------------
+
+E-UTRAN CELL GLOBAL IDENTITY:
+E-UTRAN CELL IDENTITY ..................(ECI)... :{{this.eci}}
+E-UTRAN MOBILE COUNTRY CODE ............(EMCC).. :{{this.emcc}}  
+E-UTRAN MOBILE NETWORK CODE ............(EMNC).. :{{this.emnc}}   
+
+BTS IDENTIFICATION:
+BTS NAME .............................. (NAME).. :{{this.bts.name}}  
+BTS NUMBER .............................(NO).... :{{this.bts.no}}
+CELL IDENTITY ..........................(CI).... :{{this.bts.ci}}
+MOBILE COUNTRY CODE ....................(MCC)... :{{this.bts.lac.mcc}}  
+MOBILE NETWORK CODE ....................(MNC)... :{{this.bts.lac.mnc}}   
+LOCATION AREA CODE .....................(LAC)... :{{this.bts.lac.lac}}
+{{/each}}
+
+AMOUNT OF OUTPUTTED OBJECTS: 1
+
+COMMAND EXECUTED
+
+
+BTS AND SA HANDLING COMMAND <EP_>
+<  

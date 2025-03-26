@@ -1,0 +1,297 @@
+ZELO;
+
+
+LOADING PROGRAM VERSION 22.1-0
+
+MSCi      DEMO-MSS-02               2024-09-25  00:22:08
+
+
+LOCATION AREA
+
+LA    NAME :LAC300                      LAC     :00300
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00500 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :YES
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC1700                     LAC     :01700
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00500 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :YES
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC2000                     LAC     :02000
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00500 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :YES
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC2010                     LAC     :02010
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00500 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :YES
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC2020                     LAC     :02020
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00500 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :YES
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC3333                     LAC     :03333
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00500 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :YES
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC100                      LAC     :00100
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00500 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :YES
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC4444                     LAC     :04444
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00400 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :YES
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC0999                     LAC     :00999
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00300 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :YES
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC1000                     LAC     :01000
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00500 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :YES
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC4444T                    LAC     :04444
+MOBILE COUNTRY CODE ...................(MCC)... :999
+MOBILE NETWORK CODE ...................(MNC)... :99 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00300 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :NO 
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC3333T                    LAC     :03333
+MOBILE COUNTRY CODE ...................(MCC)... :999
+MOBILE NETWORK CODE ...................(MNC)... :99 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00300 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :NO 
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC1000T                    LAC     :01000
+MOBILE COUNTRY CODE ...................(MCC)... :999
+MOBILE NETWORK CODE ...................(MNC)... :99 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00300 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :NO 
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LA5550PANI                  LAC     :05555
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00300 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :NO 
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+
+LOCATION AREA
+
+LA    NAME :LAC555PANI                  LAC     :00555
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00300 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :NO 
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+COMMAND EXECUTED
+
+
+LOCATION AREA HANDLING COMMAND <EL_>
+<  

@@ -1,0 +1,59 @@
+ZHAO;
+
+
+LOADING PROGRAM VERSION 2.12-0
+
+MSCi      DEMO-MSS-02               2024-09-23  23:35:14
+
+OUTPUT ALL GROUP CALL AREA
+
+GROUP CALL AREA NAME:        GCAC:
+---------------------       -------
+GCAN82001                     82001
+GCAN30100                     30100
+GCAN30110                     30110
+GCAN30120                     30120
+GCAN09999                      9999
+GCAN85995                     85995
+GCAN82997                     82997
+GCAN30190                     30190
+GCAN30191                     30191
+GCAN30192                     30192
+GCAN10000                     10000
+GCAN10001                     10001
+GCAN30250                     30250
+GCAN30251                     30251
+GCAN30252                     30252
+GCAN30130                     30130
+GCAN30131                     30131
+GCAN30193                     30193
+GCAN30194                     30194
+GCAN30195                     30195
+GCAN30220                     30220
+GCAN30230                     30230
+GCAN30150                     30150
+GCAN30140                     30140
+GCAN30160                     30160
+GCAN30170                     30170
+GCAN85004                     85004
+GCAN33333                     33333
+GCAN30180                     30180
+GCAN82998                     82998
+GCAN80000                     80000
+GCAN80001                     80001
+GCAN80002                     80002
+GCAN80003                     80003
+GCAN82000                     82000
+GCAN96726                     96726
+GCAN80004                     80004
+GCAN82002                     82002
+GCAN82003                     82003
+GCAN82004                     82004
+GCAN85000                     85000
+GCAN85001                     85001
+
+COMMAND EXECUTED
+
+
+GROUP CALL AREA HANDLING COMMAND <HA_>
+<  

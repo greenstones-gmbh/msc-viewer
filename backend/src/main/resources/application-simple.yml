@@ -1,0 +1,10 @@
+msc-viewer:
+  instances:
+    - id: MSS-01
+      host: mss-host
+      port: 22
+      user: user1
+      password: pwd1
+      schema: simple
+      simulate:
+        dataset: simple

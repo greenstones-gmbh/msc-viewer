@@ -1,0 +1,31 @@
+ZELO:LAC=00555;
+
+
+LOADING PROGRAM VERSION 22.1-0
+
+MSCi      DEMO-MSS-02               2024-09-27  20:59:19
+
+
+LOCATION AREA
+
+LA    NAME :LAC555PANI                  LAC     :00555
+MOBILE COUNTRY CODE ...................(MCC)... :998
+MOBILE NETWORK CODE ...................(MNC)... :06 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00300 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :NO 
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+COMMAND EXECUTED
+
+
+LOCATION AREA HANDLING COMMAND <EL_>
+<  

@@ -1,0 +1,24 @@
+ZEPO::IDE;
+
+
+LOADING PROGRAM VERSION 17.10-0
+
+MSCi      {{MSS_NAME}}               {{DATE}}  {{TIME}}
+{{#each cells}}
+
+IDENTIFICATION DATA FOR BASE TRANSCEIVER STATION
+
+BTS   NAME :{{this.name}}                NUMBER  :{{this.no}}
+BSC   NAME :{{this.bsc.name}}            NUMBER  :{{this.bsc.no}}
+LA    NAME :{{this.lac.name}}            LAC     :{{this.lac.lac}}
+MOBILE COUNTRY CODE ....................(MCC)... :{{this.lac.mcc}}  
+MOBILE NETWORK CODE ....................(MNC)... :{{this.lac.mnc}}   
+CELL IDENTITY ..........................(CI).... :{{this.ci}}
+BTS ADMINISTRATIVE STATE ....................... :LOCKED
+
+{{/each}}
+COMMAND EXECUTED
+
+
+BTS AND SA HANDLING COMMAND <EP_>
+<  

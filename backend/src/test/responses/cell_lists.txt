@@ -1,0 +1,101 @@
+ZHCO;
+
+LOADING PROGRAM VERSION 2.10-0
+
+MSCi      DEMO-MSS-02               2024-09-23  23:29:16
+
+OUTPUT ALL CELL LIST
+
+CELL LIST NAME       CELL LIST ID
+---------------      ------------
+CLIST1000                    1000
+CLIST1001                    1001
+CLIST1002                    1002
+CLIST1004                    1004
+CLIST1005                    1005
+CLIST1010                    1010
+CLIST1011                    1011
+CLIST1012                    1012
+CLIST1014                    1014
+CLIST1022                    1022
+CLIST1032                    1032
+CLIST2000                    2000
+CLIST2002                    2002
+CLIST2004                    2004
+CLIST2010                    2010
+CLIST2012                    2012
+CLIST2014                    2014
+CLIST2022                    2022
+CLIST2032                    2032
+CLIST3000                    3000
+CLIST3002                    3002
+CLIST3003                    3003
+CLIST3004                    3004
+CLIST3010                    3010
+CLIST3012                    3012
+CLIST3013                    3013
+CLIST3014                    3014
+CLIST3015                    3015
+CLIST3022                    3022
+CLIST3023                    3023
+CLIST3032                    3032
+CLIST3033                    3033
+CLIST3690                    3690
+CLIST3694                    3694
+CLIST9900                    9900
+CLIST9901                    9901
+CLIST9999                    9999
+CLIST30001                  30001
+CLIST30002                  30002
+CLIST30005                  30005
+CLIST30007                  30007
+CLIST30101                  30101
+CLIST30104                  30104
+CLIST30105                  30105
+CLIST30106                  30106
+CLIST30107                  30107
+CLIST50001                  50001
+CLIST50004                  50004
+CLIST50007                  50007
+CLIST50008                  50008
+CLIST50009                  50009
+CLIST50010                  50010
+CLIST50020                  50020
+CLIST50101                  50101
+CLIST50104                  50104
+CLIST50105                  50105
+CLIST50106                  50106
+CLIST50107                  50107
+CLIST53001                  53001
+CLIST53002                  53002
+CLIST53003                  53003
+CLIST53004                  53004
+CLIST53106                  53106
+CLIST53107                  53107
+CLIST55001                  55001
+CLIST55002                  55002
+CLIST55003                  55003
+CLIST55505                  55505
+CLIST55510                  55510
+CLIST55531                  55531
+CLIST55533                  55533
+CLIST55555                  55555
+CLIST55556                  55556
+CLIST55558                  55558
+CLIST58000                  58000
+CLIST58003                  58003
+CLIST59990                  59990
+CLIST59991                  59991
+CLIST59995                  59995
+CLIST59996                  59996
+CLIST60000                  60000
+CLIST60001                  60001
+CLIST60002                  60002
+CLIST60003                  60003
+CLIST60004                  60004
+
+COMMAND EXECUTED
+
+
+CELL LIST HANDLING COMMAND <HC_>
+<  

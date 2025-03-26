@@ -1,0 +1,1579 @@
+
+ZEPO;
+
+
+LOADING PROGRAM VERSION 17.10-0
+
+MSCi      DEMO-MSS-02               2024-09-23  16:14:57
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS2022                      NUMBER  :2022
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :2022
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911244442022   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS2032                      NUMBER  :2032
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :2032
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911244442032   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS2004                      NUMBER  :2004
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :2004
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911244442004   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS2014                      NUMBER  :2014
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :2014
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911244442014   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS3014                      NUMBER  :3014
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3014
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911210003014   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS3022                      NUMBER  :3022
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3022
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911210003022   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS3032                      NUMBER  :3032
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3032
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911210003032   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS3015                      NUMBER  :3015
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3015
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911244443015   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS3003                      NUMBER  :3003
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3003
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911244443003   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS3013                      NUMBER  :3013
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3013
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911244443013   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS3023                      NUMBER  :3023
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3023
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911244443023   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS3033                      NUMBER  :3033
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC4444T                     LAC     :4444
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3033
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911244443033   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS3694                      NUMBER  :3694
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3694
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911210003694   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS3690                      NUMBER  :3690
+BSC   NAME :BPAEBSC05                    NUMBER  :5
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :3690
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :4911210003690   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS50106                     NUMBER  :50106
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50106
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49112100050106  
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS50107                     NUMBER  :50107
+BSC   NAME :OLBZBSC01                    NUMBER  :2
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :50107
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49112100050107  
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS30001                     NUMBER  :30001
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30001
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49112333330001  
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS30002                     NUMBER  :30002
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30002
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49112333330002  
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS30005                     NUMBER  :30005
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30005
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49112333330005  
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS30007                     NUMBER  :30007
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC3333T                     LAC     :3333
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30007
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49112333330007  
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS30101                     NUMBER  :30101
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30101
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49112100030101  
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS30104                     NUMBER  :30104
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30104
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49112100030104  
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS30105                     NUMBER  :30105
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30105
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49112100030105  
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS30106                     NUMBER  :30106
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30106
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49112100030106  
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS30107                     NUMBER  :30107
+BSC   NAME :ZUBZBSC01                    NUMBER  :1
+LA    NAME :LAC1000T                     LAC     :1000
+MOBILE COUNTRY CODE ....................(MCC)... :999  
+MOBILE NETWORK CODE ....................(MNC)... :99   
+CELL IDENTITY ..........................(CI).... :30107
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49112100030107  
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :BTS1PANI                     NUMBER  :55500
+BSC   NAME : -                           NUMBER  : -
+LA    NAME :LA5550PANI                   LAC     :5555
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :55500
+BTS ADMINISTRATIVE STATE ....................... :LOCKED  
+
+ROUTING ZONE ...........................(RZ).... : -
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49112333355505  
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :LDA65102                     NUMBER  :65102
+BSC   NAME : -                           NUMBER  : -
+LA    NAME :LAC555PANI                   LAC     :555
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+CELL IDENTITY ..........................(CI).... :65102
+BTS ADMINISTRATIVE STATE ....................... :LOCKED  
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :497955501111    
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+COMMAND EXECUTED
+
+
+BTS AND SA HANDLING COMMAND <EP_>
+<  

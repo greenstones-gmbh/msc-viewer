@@ -1,0 +1,31 @@
+ZELO:LAC={{lac}},MCC={{mcc}},MNC={{mnc}};
+
+
+LOADING PROGRAM VERSION 22.1-0
+
+MSCi      {{MSS_NAME}}               {{DATE}}  {{TIME}}
+
+
+LOCATION AREA
+
+LA    NAME :{{name}}                      LAC     :{{lac}}
+MOBILE COUNTRY CODE ...................(MCC)... :{{mcc}}
+MOBILE NETWORK CODE ...................(MNC)... :{{mnc}} 
+REPAGING ATTEMPTS .....................(AT).... :002
+REPAGING INTERVAL TIMER 1 .............(INT)... :00500 ( x 10 msec )
+MSRN GROUP ............................(RNGP).. :000
+ALLOWED MNC IN NATIONAL ROAMING .......(MNC)... : -
+INCLUDE IN POOL CONCEPT ...............(INC)... :YES
+DAYLIGHT SAVING .......................(DSAV).. : -
+TIME ZONE .............................(TZ).... : -
+FULL NETWORK NAME .....................(FLNAME) : - 
+ADD COUNTRY INITIALS TO FLNAME ........(CIFN).. :NO
+SHORT NETWORK NAME ....................(SHNAME) : - 
+ADD COUNTRY INITIALS TO SHNAME ........(CISN).. :NO
+HANDOVER NUMBER RANGE INDEX FOR LA ....(HONLA). : -
+
+COMMAND EXECUTED
+
+
+LOCATION AREA HANDLING COMMAND <EL_>
+<  

@@ -1,0 +1,70 @@
+spring:
+  application:
+    name: msc-backend
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+
+msc-viewer:
+  neo4j:
+    uri: neo4j://localhost
+    user: neo4j
+    password: admin123
+    database: neo4j
+
+  graph:
+    updateOnStartup: true
+    forceReloadOnStartup: true
+
+  instances:
+    - id: MSS-DEV-01
+      host: demo-mss1.gs.de
+      port: 22
+      user: user1
+      password: pwd1
+      schema: gsmr
+      badges:
+        - label: DEVELOPMENT
+          style: secondary
+        - label: GSM-R
+          style: dark
+      simulate:
+        dataset: big
+
+    - id: MSS-DEV-02
+      host: demo-mss2.gs.de
+      port: 22
+      user: user2
+      password: pwd2
+      schema: simple
+      badges:
+        - label: DEVELOPMENT
+        - label: Simple
+          style: dark
+      simulate:
+        dataset: simple
+
+    - id: MSS-PROD-01
+      host: demo-mss3.gs.de
+      port: 22
+      user: user3
+      password: pwd3
+      schema: gsmr
+      badges:
+        - label: PRODUCTION
+          style: primary
+      simulate:
+        dataset: big
+
+  cache:
+    path: /tmp/msc-viewer
+
+  jwt:
+    secretKey: 5pAq6zRyX8bC3dV2wS7gN1mK9jF0hL4tUoP6iBvE3nG8xZaQrY7cW2fA
+    algorithm: HS256
+    issuer: http://greenstones.de
+    expirationInMinutes: 600
+
+  users:
+    - user: admin
+      password: admin1a!

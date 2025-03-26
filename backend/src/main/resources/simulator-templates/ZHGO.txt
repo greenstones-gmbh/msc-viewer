@@ -1,0 +1,18 @@
+ZHGO;
+
+LOADING PROGRAM VERSION 2.34-0
+
+MSCi      {{MSS_NAME}}               {{DATE}}  {{TIME}}
+
+OUTPUT ALL GROUP CALL REFERENCES
+
+GCREF      GCA NAME          GCA CODE   GROUP NAME        GROUP ID   STYPE
+--------   ---------------   --------   ---------------   --------   -----
+{{#each gcrefs~}}
+{{this.gcref}}   {{this.gca.name}}         {{this.gca.code}}      {{this.groupName}}             {{this.groupId}}   {{this.type}}
+{{/each}}
+COMMAND EXECUTED
+
+
+GROUP AND GROUP CALL REFERENCE HANDLING COMMAND <HG_>
+<  

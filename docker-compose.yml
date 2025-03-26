@@ -1,0 +1,43 @@
+services:
+
+  msc-neo4j:
+    image: neo4j
+    container_name: msc-neo4j
+    ports:
+      - '7474:7474'
+      - '7687:7687'
+    environment:
+      NEO4J_apoc_export_file_enabled: true
+      NEO4J_apoc_import_file_enabled: true
+      NEO4J_apoc_import_file_use__neo4j__config: true
+      NEO4J_PLUGINS: "[\"apoc\"]"
+      NEO4J_AUTH: "neo4j/admin123"
+
+  msc-backend:
+    build: ./backend
+    image: gs/msc-backend
+    ports:
+      - "8080:8080"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"  
+    container_name: msc-backend
+    links:
+      - "msc-neo4j:msc-neo4j"
+    depends_on:
+      - msc-neo4j
+  
+  msc-frontend:
+    build: ./frontend
+    container_name: msc-frontend
+    image: gs/msc-frontend
+    ports:
+      - "9999:80"
+    links:
+      - msc-neo4j
+      - msc-backend
+    depends_on:
+      - msc-neo4j
+      - msc-backend
+      
+
+

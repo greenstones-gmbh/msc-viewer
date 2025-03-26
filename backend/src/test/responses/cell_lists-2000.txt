@@ -1,0 +1,23 @@
+ZHCO:CLNAME=CLIST2000;
+
+
+LOADING PROGRAM VERSION 2.10-0
+
+MSCi      DEMO-MSS-02               2024-10-04  18:50:23
+
+OUTPUT CELL LIST
+
+CELL LIST NAME .................(CLNAME): CLIST2000
+CELL LIST IDENTIFICATION........(CLID)..: 2000
+
+CELL IDENTIFICATION LIST:
+
+  MCC      MNC       LAC        CI
+  ---      ---      -----      -----
+  999       99       4444       2000
+
+COMMAND EXECUTED
+
+
+CELL LIST HANDLING COMMAND <HC_>
+<  

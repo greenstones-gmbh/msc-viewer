@@ -1,0 +1,17 @@
+ZHAO;
+
+LOADING PROGRAM VERSION 2.12-0
+
+MSCi      {{MSS_NAME}}               {{DATE}}  {{TIME}}
+
+OUTPUT ALL GROUP CALL AREA
+
+GROUP CALL AREA NAME:        GCAC:
+---------------------       -------
+{{#each gcas}}{{this.name}}                     {{this.code}}
+{{/each}}
+COMMAND EXECUTED
+
+
+GROUP CALL AREA HANDLING COMMAND <HA_>
+<  

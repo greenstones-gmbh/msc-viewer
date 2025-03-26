@@ -1,0 +1,22 @@
+ZHCO:CLNAME={{name}};
+
+LOADING PROGRAM VERSION 2.10-0
+
+MSCi      {{MSS_NAME}}               {{DATE}}  {{TIME}}
+
+OUTPUT CELL LIST
+
+CELL LIST NAME .................(CLNAME): {{name}}
+CELL LIST IDENTIFICATION........(CLID)..: {{id}}
+
+CELL IDENTIFICATION LIST:
+
+  MCC      MNC       LAC        CI
+  ---      ---      -----      -----
+{{#each btss}}  {{this.lac.mcc}}       {{this.lac.mnc}}      {{this.lac.lac}}      {{this.ci}}
+{{/each}}
+COMMAND EXECUTED
+
+
+CELL LIST HANDLING COMMAND <HC_>
+<  

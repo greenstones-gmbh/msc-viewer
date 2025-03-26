@@ -1,0 +1,70 @@
+ZEPO:NO={{no}};
+
+
+LOADING PROGRAM VERSION 17.10-0
+
+MSCi      {{MSS_NAME}}               {{DATE}}  {{TIME}}
+
+
+BASE TRANSCEIVER STATION DATA
+
+BTS   NAME :{{this.name}}                     NUMBER  :{{this.no}}
+BSC   NAME :{{this.bsc.name}}                    NUMBER  :{{this.bsc.no}}
+LA    NAME :{{this.lac.name}}                       LAC     :{{this.lac.lac}}
+MOBILE COUNTRY CODE ....................(MCC)... :{{this.lac.mcc}}  
+MOBILE NETWORK CODE ....................(MNC)... :{{this.lac.mnc}}   
+CELL IDENTITY ..........................(CI).... :{{this.ci}}
+BTS ADMINISTRATIVE STATE ....................... :UNLOCKED
+
+ROUTING ZONE ...........................(RZ).... :999
+TARIFF AREA ............................(TA).... :0
+DOWNLINK DTX DISABLED BY MSC ...........(DTX)... :OFF
+CELL DEPENDENT ROUTING .................(CDR)... :NORMAL
+CELL TEST STATE ........................(TE).... :NORMAL CELL 
+LOCAL AREA DIALLING CODE ...............(LAD)... : -
+CHARGING AREA CODE .....................(CA).... : -
+SUPPLEMENTARY CHARGING AREA CODES ......(SCA)... : -
+NO NCAS SUPPORT.........................(NONCAS) :FALSE
+POSITION DETERMINATION TIMER............(POST).. :0 (x 10 msec)
+ESRK USAGE..............................(EU).... :NO 
+ESRK RANGE INDEX........................(ESRK).. :0
+PARAMETER SET...........................(PSET).. : -  
+GMLC INDEX FOR EMERGENCY SERVICES.......(ESGMLC) :0
+
+LOCATION NUMBER OF CELL ................(CLN)... :49123{{this.lac.lac}}{{this.ci}}   
+TYPE OF LOCATION NUMBER ................(TON)... :INTERNATIONAL
+NUMBERING PLAN IDENTIFICATION ..........(NPI)... :ISDN   
+NUMBER PRESENTATION STATUS .............(PRES).. :RESTRICTED
+NUMBER SCREENING STATUS ................(SCREEN) :NETWORK PROVIDED
+INTERNAL NETWORK NUMBER INDICATOR ......(INN)... :NOT ALLOWED
+
+TRAFFIC REASON HO FUNCTION TO CELL .....(TRHI).. :OFF
+TRAFFIC REASON HO FUNCTION FROM CELL ...(TRHO).. :OFF
+IN-CRITERION ...........................(INC)... :30 (%)
+OUT-CRITERION ..........................(OUTC).. :10 (%)
+HANDOVER CANDIDATE ENQUIRY JITTER ......(HOJ)... :0 (sec)
+COEFFICIENT ............................(COEF).. :10 (x 0.1)
+HYSTERESIS VALUE .......................(HYST).. :0
+TRIGGERING CHANNEL TYPE ................(TCH)... :TCH/F       
+INTERFERENCE LEVELS FOR IN-CRITERION ...(INTI).. :1, 2, 3, 4, 5 
+INTERFERENCE LEVELS FOR OUT-CRITERION ..(INTO).. :1, 2, 3, 4, 5 
+
+RESOURCE INDICATION FUNCTION ...........(RI).... :OFF
+RESOURCE INDICATION METHOD .............(RIM)... :NO INDICATION          
+RESOURCE INDICATION PERIOD .............(RIP)... :80 (x 100 msec)
+LOAD INFORMATION VALIDITY TIME .........(LIV)... :10 (sec)
+EXTENDED RESOURCE INDICATOR FUNCTION ...(ERI)... :ON
+TOTAL ACCESSIBLE RESOURCE INDICATION ...(TAR)... :ON
+SUBSEQUENT MODE ........................(SM).... :ON
+FULL RATE TRAFFIC CHANNEL MAX COUNT ....(TCHF).. :0
+HALF RATE TRAFFIC CHANNEL MAX COUNT ....(TCHH).. :0
+RESOURCE INDICATION ENQUIRY STATUS ............. : -                       
+
+NEIGHBOUR BTS LIST:
+                    NO NEIGHBOURS
+
+COMMAND EXECUTED
+
+
+BTS AND SA HANDLING COMMAND <EP_>
+<  

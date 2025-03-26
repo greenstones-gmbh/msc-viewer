@@ -1,0 +1,47 @@
+ZEPJ:ALL;
+
+
+LOADING PROGRAM VERSION 17.10-0
+
+MSCi      DEMO-MSS-02               2024-09-25  00:23:00
+
+OUTPUT LTE CONFIGURATION
+------------------------
+
+E-UTRAN CELL GLOBAL IDENTITY:
+E-UTRAN CELL IDENTITY ..................(ECI)... :101
+E-UTRAN MOBILE COUNTRY CODE ............(EMCC).. :998  
+E-UTRAN MOBILE NETWORK CODE ............(EMNC).. :01   
+
+BTS IDENTIFICATION:
+BTS NAME .............................. (NAME).. :LDA65001  
+BTS NUMBER .............................(NO).... :65001
+CELL IDENTITY ..........................(CI).... :65001
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+LOCATION AREA CODE .....................(LAC)... :555
+
+OUTPUT LTE CONFIGURATION
+------------------------
+
+E-UTRAN CELL GLOBAL IDENTITY:
+E-UTRAN CELL IDENTITY ..................(ECI)... :1111
+E-UTRAN MOBILE COUNTRY CODE ............(EMCC).. :998  
+E-UTRAN MOBILE NETWORK CODE ............(EMNC).. :06   
+
+BTS IDENTIFICATION:
+BTS NAME .............................. (NAME).. :LDA65102  
+BTS NUMBER .............................(NO).... :65102
+CELL IDENTITY ..........................(CI).... :65102
+MOBILE COUNTRY CODE ....................(MCC)... :998  
+MOBILE NETWORK CODE ....................(MNC)... :06   
+LOCATION AREA CODE .....................(LAC)... :555
+
+
+AMOUNT OF OUTPUTTED OBJECTS: 2
+
+COMMAND EXECUTED
+
+
+BTS AND SA HANDLING COMMAND <EP_>
+<  
