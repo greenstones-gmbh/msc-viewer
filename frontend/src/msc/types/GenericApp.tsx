@@ -2,7 +2,7 @@ import { Route } from "react-router-dom";
 
 import DashboardPage from "../DashboardPage";
 
-import { SignInPage } from "@clickapp/qui-bootstrap";
+import { Page, SignInPage } from "@clickapp/qui-bootstrap";
 import { AppRoutes, ModalContextProvider } from "@clickapp/qui-core";
 import { TokenAuth } from "../../clickapp/auth/TokenAuth";
 import { GraphPage } from "../GraphPage";
@@ -24,6 +24,7 @@ import { ConfigType } from "./ConfigType";
 import { ConfigTypeRoute } from "./ConfigTypeRoute";
 import { useConfigTypes } from "./ConfigTypesContext";
 import { useConfigTypesGraph, useGraphStyles } from "./ConfigTypesGraph";
+import { MapPage } from "../MapPage";
 
 export function GenericApp() {
   return (
@@ -51,6 +52,7 @@ export function GenericApp() {
               >
                 <Route index element={<GenericDashboardPage />} />
                 <Route path="graph" element={<GenericGraphPage />} />
+                <Route path="map" element={<MapPage />} />
                 <Route path="*" element={<ConfigTypeRoutes />} />
               </Route>
             </>

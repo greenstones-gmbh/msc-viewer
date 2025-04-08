@@ -42,6 +42,12 @@ public class SimpleSchema {
 								.propBlock()//
 								.prop("MCC")//
 								.prop("MNC")))
+
+				.location(l -> l //
+						.baseLocationType("cells")//
+						.props("LAC", "MCC", "MNC") //
+						.layerPrio(10) //
+						.buffer(900.))
 				.build();
 
 	}
@@ -87,6 +93,15 @@ public class SimpleSchema {
 								.propSeparator().prop("BTS ADMINISTRATIVE STATE", prop -> prop.label("STATE"))
 
 						))
+				.location(l -> l.useFeatureProvider()
+						.idTemplate("${CI}")//
+						.nameProp("NAME") //
+						.layerTitle("Cells") //
+						.layerPrio(100) //
+						.layerMaxResolution(450) //
+						.extraLayer("cell-coverages", "Cells (Coverage)", null, 150, 90)//
+						.props("NUMBER", "LAC", "MCC", "MNC", "CI", "radius:double"))
+
 				.build();
 
 	}

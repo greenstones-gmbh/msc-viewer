@@ -29,20 +29,22 @@ public class GraphService {
 
 	@org.springframework.beans.factory.annotation.Value("${msc-viewer.neo4j.uri}")
 	String uri = "neo4j://localhost";
-	
+
 	@org.springframework.beans.factory.annotation.Value("${msc-viewer.neo4j.user}")
 	String user = "neo4j";
-	
+
 	@org.springframework.beans.factory.annotation.Value("${msc-viewer.neo4j.password}")
 	String password = "admin123";
-	
+
 	@org.springframework.beans.factory.annotation.Value("${msc-viewer.neo4j.database}")
 	String database = "neo4j";
 
+	public List<Map<String, Object>> queryMap(String query, String varName) {
+		return query(query).stream().map(q -> q.get(varName).asMap()).toList();
+	}
+
 	public List<org.neo4j.driver.Record> query(String query) {
 
-		
-		
 		try (var driver = GraphDatabase.driver(uri, AuthTokens.basic(user, password))) {
 			driver.verifyConnectivity();
 

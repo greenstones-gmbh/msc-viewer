@@ -2,15 +2,23 @@ package de.greenstones.gsmr.msc.clients.test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.Random;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+import org.geotools.referencing.GeodeticCalculator;
+
 import de.greenstones.gsmr.msc.ApplicationException;
 import de.greenstones.gsmr.msc.core.IdConverter;
+import de.greenstones.gsmr.msc.gis.FeatureProvider;
+import de.greenstones.gsmr.msc.gis.SimpleFeatureProvider;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.ToString;
 
 @Getter
 public class TestData {
@@ -21,6 +29,8 @@ public class TestData {
     List<Gca> gcas;
     List<Gcref> gcrefs;
     List<Lte> ltes;
+
+    Map<String, FeatureProvider> featureProviders;
 
     public Lac findLac(String id) {
         return lacs.stream().filter(lac -> {
@@ -106,6 +116,16 @@ public class TestData {
                 new Lte("11111", "999", "04", data.btss.get(0)), //
                 new Lte("22222", "999", "04", data.btss.get(1)) //
         );
+
+        SimpleFeatureProvider cellFeatureProvider = new SimpleFeatureProvider("EPSG:4326");
+
+        cellFeatureProvider.add("10000", 8.631705, 50.172309, 1000.);
+        cellFeatureProvider.add("10001", 8.628027, 50.176661, 1500);
+        cellFeatureProvider.add("10002", 8.605501, 50.180791, 2000);
+        cellFeatureProvider.add("10003", 8.636469, 50.188740, 2000);
+
+        data.featureProviders = Map.of("cells", cellFeatureProvider);
+
         return data;
     }
 
@@ -124,7 +144,7 @@ public class TestData {
                 new Bsc("BSC02", "2") //
         );
 
-        data.lacs = repeat(15).map(i -> 100 * (i + 1))
+        data.lacs = repeat(4).map(i -> 100 * (i + 1))
                 .map(i -> new Lac("LAC" + i, IdConverter.leftPad("" + i, 5, '0'), "999", "06")).toList();
 
         data.btss = repeat(250).map(i -> 10000 + i * 100)
@@ -134,8 +154,25 @@ public class TestData {
 
         data.cellLists = data.btss.stream().map(bts -> CellList.create(bts)).toList();
 
+        Map<String, Coords> lacsCoords = new HashMap<>();
+        data.lacs.stream().forEach(lac -> {
+            Coords coords = randomCoords(7.66, 49.9, 9.33, 50.33);
+            lacsCoords.put(lac.getLac(), coords);
+        });
+
+        SimpleFeatureProvider cellFeatureProvider = new SimpleFeatureProvider("EPSG:4326");
+
+        Map<String, Coords> btsCoords = new HashMap<>();
+        data.btss.stream().forEach(bts -> {
+            Coords lacCoords = lacsCoords.get(bts.getLac().lac);
+            Coords coords = randomCoords(lacCoords, 0.2, 0.1);
+            btsCoords.put(bts.ci, coords);
+            cellFeatureProvider.add(bts.ci, coords.x, coords.y, 3500);
+        });
+        // -----
+
         data.gcas = repeat(50).map(i -> 10000 + i * 1000)
-                .map(i -> new Gca("" + i, "GCAN" + i, random(data.cellLists, 5, 20)))
+                .map(i -> new Gca("" + i, "GCAN" + i, randomCellLists(data.btss, btsCoords, data.cellLists, 5, 20)))
                 .toList();
 
         List<String> types = Arrays.asList("VGCS", "VBMS");
@@ -149,7 +186,13 @@ public class TestData {
 
         data.ltes = repeat(50).map(i -> 10000 + i * 1000).map(i -> new Lte("" + i, "999", "04", random(data.btss)))
                 .toList();
+
+        data.featureProviders = Map.of("cells", cellFeatureProvider);
+
         return data;
+    }
+
+    static record Coords(double x, double y) {
     }
 
     public static Stream<Integer> repeat(int n) {
@@ -175,10 +218,65 @@ public class TestData {
         return result;
     }
 
+    public static List<CellList> randomCellLists(List<Bts> list, Map<String, Coords> coords, List<CellList> clists,
+            int minSize,
+            int maxSize) {
+
+        Bts bts = random(list);
+        Coords c1 = coords.get(bts.ci);
+
+        List<CellList> list2 = coords.keySet().stream().map(k -> {
+            Coords c2 = coords.get(k);
+            double distance = distance(c1, c2);
+            return new Dist(k, distance);
+        }).sorted((a, b) -> a.dist.compareTo(b.dist)) //
+                .limit(random(minSize, maxSize)) //
+                .map(d -> d.ci)//
+                .map(ci -> {
+                    Optional<CellList> any = clists.stream().filter(cl -> cl.getId().equals("" + ci)).findAny();
+                    return any;
+                })//
+                .filter(f -> !f.isEmpty())
+                .map(f -> f.get()).toList();
+
+        // return clists.stream().limit(5).toList();
+        return list2;
+    }
+
+    static record Dist(String ci, Double dist) {
+    }
+
     public static <T> List<T> random(List<T> list, int minSize, int maxSize) {
         Random rand = new Random();
         int size = rand.nextInt(maxSize - minSize) + minSize;
         return random(list, size);
+    }
+
+    public static int random(int minSize, int maxSize) {
+        Random rand = new Random();
+        int size = rand.nextInt(maxSize - minSize) + minSize;
+        return size;
+    }
+
+    public static Coords randomCoords(double minX, double minY, double maxX, double maxY) {
+        Random rand = new Random();
+        double x = rand.nextDouble(maxX - minX) + minX;
+        double y = rand.nextDouble(maxY - minY) + minY;
+        return new Coords(x, y);
+    }
+
+    public static Coords randomCoords(Coords c, double radiusX, double radiusY) {
+        return randomCoords(c.x - radiusX, c.y - radiusY, c.x + radiusX, c.y + radiusY);
+    }
+
+    public static double distance(Coords c1, Coords c2) {
+        GeodeticCalculator calc = new GeodeticCalculator();
+
+        calc.setStartingGeographicPoint(c1.x, c1.y);
+        calc.setDestinationGeographicPoint(c2.x, c2.y);
+
+        double distance = calc.getOrthodromicDistance(); // in Metern
+        return distance;
     }
 
     ////
@@ -219,6 +317,7 @@ public class TestData {
 
     @AllArgsConstructor
     @Getter
+    @ToString
     public static class CellList {
         String id;
         String name;
@@ -272,4 +371,5 @@ public class TestData {
         }
 
     }
+
 }

@@ -60,6 +60,11 @@ public class GSMRSchema {
 								.propBlock()//
 								.prop("MCC")//
 								.prop("MNC")))
+				.location(l -> l //
+						.baseLocationType("cells")//
+						.props("LAC", "MCC", "MNC") //
+						.layerPrio(10) //
+						.buffer(900.))
 				.build();
 
 	}
@@ -121,6 +126,15 @@ public class GSMRSchema {
 								})
 
 						))
+				.location(l -> l.useFeatureProvider()
+						.idTemplate("${CI}")//
+						.nameProp("NAME") //
+						.layerTitle("Cells") //
+						.layerPrio(100) //
+						.layerMaxResolution(450) //
+						.extraLayer("cell-coverages", "Cells (Coverage)", null, 150, 90)//
+						.props("NUMBER", "LAC", "MCC", "MNC", "CI", "radius:double"))
+
 				.build();
 
 	}
@@ -168,6 +182,13 @@ public class GSMRSchema {
 								})
 
 						))
+				.location(l -> l //
+						.baseLocationType("cells")//
+						// .props("GCAC", "GCAN") //
+						.nameProp("CLID") //
+						.layerMaxResolution(150) //
+						.layerPrio(40) //
+						.buffer(300.))
 				.build();
 
 	}
@@ -256,6 +277,14 @@ public class GSMRSchema {
 								})
 
 						))
+				.location(l -> l //
+						.baseLocationType("cell-lists", "cells")//
+						.props("GCAC", "GCAN") //
+						.nameProp("GCAC") //
+						.layerTitle("GCAs") //
+						.layerMaxResolution(150) //
+						.layerPrio(20) //
+						.buffer(600.))
 				.build();
 	}
 
@@ -331,6 +360,13 @@ public class GSMRSchema {
 								)//
 
 						))
+				.location(l -> l //
+						.baseLocationType("cell-lists", "cells")//
+						.nameProp("GCREF") //
+						.layerTitle("GCREFs") //
+						.layerMaxResolution(150) //
+						.layerPrio(30) //
+						.buffer(300.))
 				.build();
 	}
 

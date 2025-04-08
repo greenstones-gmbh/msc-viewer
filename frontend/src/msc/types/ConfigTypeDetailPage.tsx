@@ -3,10 +3,19 @@ import { DependencyList, useMemo } from "react";
 import { Tab } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { GraphView } from "../../clickapp-bootstrap/graph/GraphView";
+import { VectorLayer } from "../../clickapp-ol/VectorLayer";
 import { GraphTabTitle } from "../GraphTabTitle";
+import { MscMap, useFeaturePresenter } from "../map/MscMap";
+import { selectionStyle } from "../map/Styles";
 import { useGraphContext } from "../MscGraphContext";
 import MscObjPage from "../MscObjPage";
-import { mscUrl, prop, useMscInstance, useMscObj } from "../MsgObj";
+import {
+  mscUrl,
+  prop,
+  urlWithBasePath,
+  useMscInstance,
+  useMscObj,
+} from "../MsgObj";
 import { formatLink, formatText, Prop, TableTab } from "./ConfigType";
 import { useGraphStyles } from "./ConfigTypesGraph";
 import { RelationTable } from "./RelationTable";
@@ -35,10 +44,12 @@ export function ConfigTypeDetailPage({
   const detailModel = useDetailModel(type, detailProps!);
 
   const { graphAvailable } = useGraphContext();
-  const defaultTab =
+  var defaultTab =
     graphAvailable && graphQueries && graphQueries.length > 0
       ? "graph"
       : "settings";
+
+  defaultTab = "map";
 
   const graphStyles = useGraphStyles();
 
@@ -75,6 +86,11 @@ export function ConfigTypeDetailPage({
       tabs={(v) =>
         graphAvailable
           ? [
+              <Tab eventKey="map" title={<GraphTabTitle title="Map" />}>
+                <MapView type={type} id={id} />
+                {/* <div style={{ height: 2 }} /> */}
+              </Tab>,
+
               ...(graphQueries && graphQueries.length > 0
                 ? [
                     <Tab
@@ -146,4 +162,17 @@ export function createQueries(
   console.log("createQueries", d);
 
   return d;
+}
+
+function MapView({ type, id }: any) {
+  const mscId = useMscInstance();
+  const { view, features } = useFeaturePresenter(
+    urlWithBasePath(`/api/gis/msc/${mscId}/${type}/${id}`),
+    selectionStyle(type)
+  );
+  return (
+    <MscMap visibleLayers={[type]} view={view}>
+      <VectorLayer features={features} />
+    </MscMap>
+  );
 }

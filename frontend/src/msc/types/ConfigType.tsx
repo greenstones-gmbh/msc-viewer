@@ -54,6 +54,16 @@ export interface ConfigType {
     relations?: { targetType: string; name?: string }[];
     color: string;
   };
+  map?: {
+    layers: {
+      path: string;
+      layer: string;
+      title: string;
+      style?: string;
+      maxResolution?: number;
+      prio: number;
+    };
+  };
 }
 
 export function createSort(prop?: string): Sort | undefined {

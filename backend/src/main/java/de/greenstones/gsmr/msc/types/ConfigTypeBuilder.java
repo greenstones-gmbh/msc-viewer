@@ -20,10 +20,12 @@ public class ConfigTypeBuilder {
     NodeConfigurer node;
     FrontendConfigurer frontend;
 
+    LocationConfigurer location;
+
     public ConfigType build() {
         return new ConfigType(new Command<>(listCommand, parser::list), new Command<>(detailCommand, parser::obj),
                 idConverter, idMapping, node,
-                frontend);
+                frontend, location);
     }
 
     public ConfigTypeBuilder parser(ConfigTypeParser parser) {
@@ -84,6 +86,12 @@ public class ConfigTypeBuilder {
     public ConfigTypeBuilder frontend(Customizer<FrontendConfigurer> customizer) {
         this.frontend = new FrontendConfigurer();
         customizer.customize(frontend);
+        return this;
+    }
+
+    public ConfigTypeBuilder location(Customizer<LocationConfigurer> customizer) {
+        this.location = new LocationConfigurer();
+        customizer.customize(this.location);
         return this;
     }
 

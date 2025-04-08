@@ -58,6 +58,59 @@ public class MscGraphService {
 	@org.springframework.beans.factory.annotation.Value("${msc-viewer.graph.forceReloadOnStartup:false}")
 	boolean forceReloadOnStartup = false;
 
+	public List<Map<String, Object>> getNodes(String mscId, String sourceType) {
+		MscInstance msc = mscResolver.find(mscId);
+		ConfigType stype = msc.getTypes().get(sourceType);
+		String q = "MATCH (p:" + fullLabel(mscId, stype.getNode().getLabel()) + " ) return p";
+		return graphService.queryMap(q, "p");
+	}
+
+	public Map<String, Object> getNode(String mscId, String sourceType, String id) {
+		MscInstance msc = mscResolver.find(mscId);
+		ConfigType stype = msc.getTypes().get(sourceType);
+		String q = "MATCH (p:" + fullLabel(mscId, stype.getNode().getLabel()) + " where p.id='" + id + "'  ) return p";
+		List<Map<String, Object>> data = graphService.queryMap(q, "p");
+		return data.isEmpty() ? null : data.get(0);
+	}
+
+	public List<RelatedNodes> getAllRelatedNodes(String mscId, String sourceType,
+			String... targetTypes) {
+		return getRelatedNodes(mscId, sourceType, null, targetTypes);
+	}
+
+	public List<RelatedNodes> getRelatedNodes(String mscId, String sourceType, String sourceId,
+			String... targetTypes) {
+		MscInstance msc = mscResolver.find(mscId);
+		ConfigType stype = msc.getTypes().get(sourceType);
+
+		List<String> pathNodeTypes = Arrays.asList(targetTypes).stream().map(tt -> msc.getTypes().get(tt))
+				.map(tt -> fullLabel(mscId, tt.getNode().getLabel())).collect(Collectors.toList());
+		String targetType = pathNodeTypes.remove(pathNodeTypes.size() - 1);
+		List<String> pathNodes = pathNodeTypes.stream().map(s -> "(:" + s + ")").collect(Collectors.toList());
+
+		List<String> nodes = new ArrayList<String>();
+		nodes.add("(source:" + fullLabel(mscId, stype.getNode().getLabel())
+				+ (sourceId != null ? " where source.id='" + sourceId + "'" : "")
+				+ ") ");
+		nodes.addAll(pathNodes);
+		nodes.add("(target:" + targetType + ")");
+
+		String q = "match " + nodes.stream().collect(Collectors.joining("-[]-")) + " return source, target";
+		System.err.println(q);
+		List<Record> records = graphService.query(q);
+		var pairs = records.stream().collect(Collectors.groupingBy(p -> p.get("source").asMap(),
+				Collectors.mapping(p -> p.get("target").asMap(), Collectors.toSet())));
+
+		return pairs.entrySet().stream().map(p -> new RelatedNodes(p.getKey(), p.getValue())).toList();
+
+	}
+
+	public static record RelatedNodes(
+			Map<String, Object> source,
+			Set<Map<String, Object>> targets) {
+
+	};
+
 	public List<Obj> getRelatedData(String mscId, String sourceType, String sourceId, String... targetTypes) {
 
 		MscInstance msc = mscResolver.find(mscId);

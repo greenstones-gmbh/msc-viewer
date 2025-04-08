@@ -1,12 +1,14 @@
 package de.greenstones.gsmr.msc;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import de.greenstones.gsmr.msc.gis.CsvFeatureProvider;
 import lombok.Data;
 
 @Component
@@ -38,6 +40,9 @@ public class MscViewerProperties {
 		@JsonIgnore
 		String password;
 
+		@JsonIgnore
+		Map<String, FeatureProviderConfig> gis;
+
 	}
 
 	@Data
@@ -49,6 +54,15 @@ public class MscViewerProperties {
 	@Data
 	public static class Simulate {
 		String dataset;
+	}
+
+	@Data
+	public static class FeatureProviderConfig {
+		String path;
+		String crs;
+		String key;
+		String x;
+		String y;
 	}
 
 }

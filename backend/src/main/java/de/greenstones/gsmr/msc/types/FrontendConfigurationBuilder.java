@@ -1,5 +1,6 @@
 package de.greenstones.gsmr.msc.types;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -10,6 +11,8 @@ import de.greenstones.gsmr.msc.types.FrontendConfiguration.Column;
 import de.greenstones.gsmr.msc.types.FrontendConfiguration.DetailConfig;
 import de.greenstones.gsmr.msc.types.FrontendConfiguration.LinkTo;
 import de.greenstones.gsmr.msc.types.FrontendConfiguration.ListConfig;
+import de.greenstones.gsmr.msc.types.FrontendConfiguration.MapConfig;
+import de.greenstones.gsmr.msc.types.FrontendConfiguration.MapLayer;
 import de.greenstones.gsmr.msc.types.FrontendConfiguration.NodeConfig;
 import de.greenstones.gsmr.msc.types.FrontendConfiguration.Prop;
 import de.greenstones.gsmr.msc.types.FrontendConfiguration.Relation;
@@ -157,6 +160,39 @@ public class FrontendConfigurationBuilder {
             c.node.relations = type.getNode().getRelations().stream().map(r -> {
                 return new Relation(r.getTarget(), r.getName());
             }).toList();
+        }
+
+        if (type.getLocation() != null) {
+            c.map = new MapConfig();
+            MapLayer l = new MapLayer();
+            l.layer = typeKey;
+            l.path = typeKey;
+            l.title = type.getLocation().getDefaultLayer().getTitle() != null
+                    ? type.getLocation().getDefaultLayer().getTitle()
+                    : type.getFrontend().getTitle();
+            l.style = type.getLocation().getDefaultLayer().getStyle() != null
+                    ? type.getLocation().getDefaultLayer().getStyle()
+                    : typeKey;
+            l.maxResolution = type.getLocation().getDefaultLayer().getMaxResolution();
+            l.prio = type.getLocation().getDefaultLayer().getPrio();
+            c.map.layers = new ArrayList<>();
+            c.map.layers.add(l);
+
+            if (type.getLocation().getExtraLayers() != null) {
+                type.getLocation().getExtraLayers().forEach(el -> {
+                    MapLayer l1 = new MapLayer();
+                    l1.layer = el.getId();
+                    l1.path = typeKey;
+                    l1.title = el.getTitle();
+                    l1.style = el.getStyle() != null
+                            ? el.getStyle()
+                            : el.getId();
+                    l1.maxResolution = el.getMaxResolution();
+                    l1.prio = el.getPrio();
+
+                    c.map.layers.add(l1);
+                });
+            }
         }
 
         return c;

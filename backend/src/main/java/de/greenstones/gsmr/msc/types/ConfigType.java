@@ -25,6 +25,8 @@ public class ConfigType {
 	NodeConfigurer node;
 	FrontendConfigurer frontend;
 
+	LocationConfigurer location;
+
 	/**
 	 * Constructs a ConfigType with the specified commands, ID converter, and
 	 * schema.

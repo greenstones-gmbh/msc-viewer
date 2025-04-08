@@ -5,7 +5,6 @@ import { useGraphContext } from "./MscGraphContext";
 import {
   ActionButton,
   AppLayout,
-  LayoutSwitcherDropdown,
   NavbarAuthButtons,
   NavbarBrand,
   NavLink,
@@ -16,15 +15,25 @@ import { HiOutlineServer } from "react-icons/hi2";
 import { PiGraphBold } from "react-icons/pi";
 
 import { PropsWithChildren, ReactNode } from "react";
+import { useMapLayers } from "./types/ConfigTypesContext";
+import { PiMapPinSimpleAreaFill } from "react-icons/pi";
 
 function TopNav() {
   const { mscId } = useParams();
   const { graphAvailable, graphDatabaseAvailable, date, reload, isPending } =
     useGraphContext();
+
+  const layers = useMapLayers();
+
   return (
     <>
       <Nav className="me-4">
         <NavLink to={`/${mscId}`}>Types</NavLink>
+
+        {layers && layers.length > 0 && (
+          <NavLink to={`/${mscId}/map`}>Map</NavLink>
+        )}
+
         <NavLink to={`/${mscId}/graph`}>Graph</NavLink>
       </Nav>
 
@@ -97,6 +106,7 @@ export function MscNoSidebarLayout() {
 
 export function SidebarNav({ children }: PropsWithChildren) {
   const { mscId } = useParams();
+  const layers = useMapLayers();
   return (
     <>
       <Nav variant="pills" className="flex-column mt-3">
@@ -114,6 +124,11 @@ export function SidebarNav({ children }: PropsWithChildren) {
       </Nav>
 
       <Nav variant="pills" className="flex-column mt-3">
+        {layers && layers.length > 0 && (
+          <NavLink to={`/${mscId}/map`} icon={PiMapPinSimpleAreaFill}>
+            Map
+          </NavLink>
+        )}
         <NavLink to={`/${mscId}/graph`} icon={PiGraphBold}>
           Graph
         </NavLink>

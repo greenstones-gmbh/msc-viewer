@@ -17,6 +17,28 @@ public class FrontendConfiguration {
     ListConfig list;
     DetailConfig detail;
     NodeConfig node;
+    MapConfig map;
+
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    @AllArgsConstructor
+    static class MapConfig {
+        List<MapLayer> layers;
+    }
+
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    @AllArgsConstructor
+    static class MapLayer {
+        String layer;
+        String title;
+        String path;
+        String style;
+        Integer maxResolution;
+        int prio;
+    }
 
     @Getter
     @Setter

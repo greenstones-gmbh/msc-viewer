@@ -5,3 +5,8 @@
 .bg-purple .nav-pills .nav-link.active {
   --bs-nav-pills-link-active-bg: #4338ca;
 }
+
+.ol_bw {
+  /* filter: grayscale(80%); */
+  filter: grayscale(60%) brightness(0.95);
+}

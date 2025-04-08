@@ -14,7 +14,7 @@ msc-viewer:
 
   graph:
     updateOnStartup: true
-    forceReloadOnStartup: true
+    forceReloadOnStartup: false
 
   instances:
     - id: MSS-DEV-01
@@ -68,3 +68,7 @@ msc-viewer:
   users:
     - user: admin
       password: admin1a!
+
+logging:
+  level:
+    org.geotools.feature: ERROR

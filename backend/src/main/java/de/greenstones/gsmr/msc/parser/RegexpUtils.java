@@ -13,13 +13,13 @@ import java.util.stream.Collectors;
 public class RegexpUtils {
 
 	public static List<String> groups(String regexp, String content) {
-		//OutputTransform.printUnicode(content);
+		// OutputTransform.printUnicode(content);
 		Pattern p = Pattern.compile(regexp, Pattern.DOTALL);
 		Matcher m = p.matcher(content);
 		List<String> parts = new ArrayList<>();
 		if (m.find()) {
 			for (int i = 1; i <= m.groupCount(); i++) {
-				//System.err.println((i-1)+">"+m.group(i)+"<");
+				// System.err.println((i-1)+">"+m.group(i)+"<");
 				parts.add(m.group(i));
 			}
 		} else {
@@ -28,7 +28,6 @@ public class RegexpUtils {
 		return parts;
 	}
 
-	
 	public static List<List<String>> allGroups(String regexp, String content) {
 		Pattern p = Pattern.compile(regexp, Pattern.CASE_INSENSITIVE);
 		Matcher m = p.matcher(content);
@@ -43,19 +42,24 @@ public class RegexpUtils {
 		}
 		return items;
 	}
-	
-	
+
+	public static Set<String> getVarNames(String template) {
+		String var = "\\$\\{(\\w+)\\}";
+		return allGroups(var, template).stream().flatMap(l -> l.stream())
+				.collect(Collectors.toSet());
+	}
+
 	public static Map<String, String> parseTemplate(String template, String content) {
 		String var = "\\$\\{(\\w+)\\}";
 		List<String> vars = allGroups(var, template).stream().flatMap(l -> l.stream())
 				.collect(Collectors.toList());
 		String regexp = template.replaceAll(var, "(?<$1>.*)");
-		//System.err.println(">>>"+regexp);
+		// System.err.println(">>>"+regexp);
 		Pattern p = Pattern.compile(regexp, Pattern.CASE_INSENSITIVE);
 		Matcher m = p.matcher(content);
 		if (m.find()) {
 			Map<String, String> groups = new HashMap<>();
-			
+
 			for (String v : vars) {
 				groups.put(v, m.group(v));
 			}
@@ -64,7 +68,6 @@ public class RegexpUtils {
 		return null;
 
 	}
-	
 
 	public static String interpolate(String template, Map<String, String> values) {
 		Map<String, String> valuesMap = Optional.ofNullable(values).orElse(Map.of());
