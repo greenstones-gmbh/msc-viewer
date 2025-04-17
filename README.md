@@ -6,7 +6,12 @@ A user-friendly, web-based interface for MSC/MSS that helps users easily access,
 
 Since Nokia MSS/MSCs vary in versions and configurations, a one-size-fits-all UI is not practical. MscViewer is a toolkit for creating efficient and high-quality web applications for MSC/MSS, tailored to customer requirements.
 
-MscViewer connects to the MSC via terminal, replacing manual command input with a user-friendly web interface that offers high-level functions like configuration linking and object graph visualization.
+MscViewer connects to the MSC via terminal, replacing manual command input with a user-friendly web interface that offers high-level functions like configuration linking, object graph and map visualizations.
+
+![screenshot 2](./docs/assets/p5.png)
+
+The tool helps visualize configurations on a map to provide location context. Providing location information, such as coordinates or shapes, for the base objects allows the tool to calculate geographical representations of related configurations. For example, with latitude and longitude coordinates for cells and their coverage data, MscViewer can calculate shapes for location areas, GCREFs, and GCAs and put them on the map.
+
 
 ## Features
 
