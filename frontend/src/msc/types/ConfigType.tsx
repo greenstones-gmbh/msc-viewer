@@ -62,6 +62,7 @@ export interface ConfigType {
       style?: string;
       maxResolution?: number;
       prio: number;
+      enabled: boolean;
     };
   };
 }

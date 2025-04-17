@@ -68,6 +68,8 @@ export function Tooltip({
           whiteSpace: "normal",
           wordBreak: "break-word",
           overflowWrap: "break-word",
+          userSelect: "none",
+          // pointerEvents: "none",
         }}
       >
         {selection &&

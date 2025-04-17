@@ -24,8 +24,9 @@ public class LocationConfigurer {
     boolean loader;
     String idTemplate;
 
-    public LocationConfigurer extraLayer(String id, String layerTitle, String style, Integer maxResolution, int prio) {
-        this.extraLayers.add(new Layer(id, layerTitle, style, maxResolution, prio));
+    public LocationConfigurer extraLayer(String id, String layerTitle, String style, Integer maxResolution, int prio,
+            boolean enabled) {
+        this.extraLayers.add(new Layer(id, layerTitle, style, maxResolution, prio, enabled));
         return this;
     }
 
@@ -49,6 +50,11 @@ public class LocationConfigurer {
         return this;
     }
 
+    public LocationConfigurer layerEnabled(boolean enabled) {
+        this.defaultLayer.enabled = enabled;
+        return this;
+    }
+
     @AllArgsConstructor
     @NoArgsConstructor
     @Getter
@@ -58,6 +64,7 @@ public class LocationConfigurer {
         String style;
         Integer maxResolution = 3000;
         int prio = 100;
+        boolean enabled = true;
     }
 
     // ---

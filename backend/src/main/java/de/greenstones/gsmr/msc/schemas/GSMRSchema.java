@@ -132,7 +132,7 @@ public class GSMRSchema {
 						.layerTitle("Cells") //
 						.layerPrio(100) //
 						.layerMaxResolution(450) //
-						.extraLayer("cell-coverages", "Cells (Coverage)", null, 150, 90)//
+						.extraLayer("cell-coverages", "Cells (Coverage)", null, 150, 90, false)//
 						.props("NUMBER", "LAC", "MCC", "MNC", "CI", "radius:double"))
 
 				.build();
@@ -187,6 +187,7 @@ public class GSMRSchema {
 						// .props("GCAC", "GCAN") //
 						.nameProp("CLID") //
 						.layerMaxResolution(150) //
+						.layerEnabled(false)//
 						.layerPrio(40) //
 						.buffer(300.))
 				.build();
@@ -366,6 +367,7 @@ public class GSMRSchema {
 						.layerTitle("GCREFs") //
 						.layerMaxResolution(150) //
 						.layerPrio(30) //
+						.layerEnabled(false)//
 						.buffer(300.))
 				.build();
 	}

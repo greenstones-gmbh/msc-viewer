@@ -99,7 +99,7 @@ public class SimpleSchema {
 						.layerTitle("Cells") //
 						.layerPrio(100) //
 						.layerMaxResolution(450) //
-						.extraLayer("cell-coverages", "Cells (Coverage)", null, 150, 90)//
+						.extraLayer("cell-coverages", "Cells (Coverage)", null, 150, 90, true)//
 						.props("NUMBER", "LAC", "MCC", "MNC", "CI", "radius:double"))
 
 				.build();

@@ -8,12 +8,12 @@ import { StyleLike } from "ol/style/Style";
 import { PropsWithChildren, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { GeoJSONLayer } from "../../clickapp-ol/GeoJSONLayer";
+import { LayerControl } from "../../clickapp-ol/LayerControl";
 import { Map } from "../../clickapp-ol/Map";
 import { Tooltip, TooltipOverlay } from "../../clickapp-ol/Tooltip";
 import { urlWithBasePath, useMscInstance } from "../MsgObj";
 import { useMapLayers } from "../types/ConfigTypesContext";
-import { getNamedStyle, lacStyle } from "./Styles";
-import { LayerControl } from "../../clickapp-ol/LayerControl";
+import { getNamedStyle } from "./Styles";
 
 export function MscMap({
   visibleLayers,
@@ -42,6 +42,7 @@ export function MscMap({
           name={l.layer}
           title={l.title}
           visible={isLayerVisible(l.layer)}
+          //visible={l.enabled}
           maxResolution={l.maxResolution}
         />
       ))}

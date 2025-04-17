@@ -37,7 +37,7 @@ function getDefaultView(): ViewOptions {
 
   return {
     center: fromLonLat([8.625286, 50.181481]),
-    zoom: 14,
+    zoom: 10,
   };
 }
 

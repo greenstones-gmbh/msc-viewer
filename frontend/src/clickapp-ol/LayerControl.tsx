@@ -25,7 +25,13 @@ export function LayerControl() {
   return (
     <div
       className="bg-white border-sm shadow-sm p-2"
-      style={{ position: "absolute", top: 10, right: 10, zIndex: 100000 }}
+      style={{
+        position: "absolute",
+        top: 10,
+        right: 10,
+        zIndex: 100000,
+        userSelect: "none",
+      }}
     >
       <b className="mb-3">Layers</b>
       <br />
