@@ -1,7 +1,6 @@
 import { Sort } from "@clickapp/qui-core";
 import { createMscSortKey, getMscPropValue, MscObj } from "../MsgObj";
 import { formatTemplate } from "./utils";
-import { log } from "console";
 
 export interface Template {
   template: string;

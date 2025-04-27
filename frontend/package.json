@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "http://greenstones.de/msc-viewer",
+  "type": "module",
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
     "@azure/msal-browser": "^3.13.0",
@@ -11,18 +12,10 @@
     "@clickapp/qui-core": "^0.0.6",
     "@neo4j-nvl/react": "^0.3.5",
     "@react-keycloak/web": "^3.4.0",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.86",
-    "@types/react": "^18.2.61",
-    "@types/react-dom": "^18.2.19",
     "bootstrap": "^5.3.3",
     "classnames": "^2.5.1",
     "date-fns": "^4",
     "file-saver": "^2.0.5",
-    "http-proxy-middleware": "^3.0.3",
     "jsts": "^2.12.1",
     "jwt-decode": "^4.0.0",
     "keycloak-js": "^24.0.3",
@@ -35,41 +28,31 @@
     "react-icons": "5.4.0",
     "react-oidc-context": "^3.1.0",
     "react-router-dom": "^6.22.2",
-    "react-scripts": "5.0.1",
     "recharts": "^2.12.7",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4",
-    "webpack": "5.95.0"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "up-qui": "npm rm  @clickapp/qui-bootstrap  @clickapp/qui-core && rm -rf node_modules/.cache/  && npm i  @clickapp/qui-core @clickapp/qui-bootstrap  --registry http://localhost:4873 && npm start",
-    "up-local-qui": "npm rm @clickapp/qui-bootstrap  @clickapp/qui-core && rm -rf node_modules/.cache/  && npm i  @clickapp/qui-core @clickapp/qui-bootstrap  --registry http://localhost:4873 && npm start",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "up-qui": "npm rm  @clickapp/qui-bootstrap  @clickapp/qui-core && rm -rf node_modules/.cache/  && npm i  @clickapp/qui-core @clickapp/qui-bootstrap  --registry http://localhost:4873 && npm run dev",
+    "up-local-qui": "npm rm @clickapp/qui-bootstrap  @clickapp/qui-core && rm -rf node_modules/.cache/  && npm i  @clickapp/qui-core @clickapp/qui-bootstrap  --registry http://localhost:4873 && npm run dev",
     "up-global-qui": "npm rm @clickapp/qui-bootstrap  @clickapp/qui-core && rm -rf node_modules/.cache/  && npm i  @clickapp/qui-core @clickapp/qui-bootstrap"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "devDependencies": {
     "@types/jsts": "^0.17.24",
-    "@types/ol": "^6.5.3"
+    "@types/ol": "^6.5.3",
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.3.1"
   }
 }
