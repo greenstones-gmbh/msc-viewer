@@ -25,6 +25,7 @@ import { ConfigType } from "./ConfigType";
 import { ConfigTypeRoute } from "./ConfigTypeRoute";
 import { useConfigTypes } from "./ConfigTypesContext";
 import { useConfigTypesGraph, useGraphStyles } from "./ConfigTypesGraph";
+import { Alert } from "react-bootstrap";
 
 export function GenericApp() {
   return (
@@ -58,7 +59,15 @@ export function GenericApp() {
             </>
           }
           public={<></>}
-          login={<SignInPage title="MSC Viewer" />}
+          login={
+            <SignInPage title="MSC Viewer">
+              <Alert variant="warning" className="mt-4 mb-0">
+                Login with{" "}
+                <span className="font-monospace">admin/admin1a!</span> to try
+                the demo.
+              </Alert>
+            </SignInPage>
+          }
         />
       </ModalContextProvider>
     </TokenAuth>
