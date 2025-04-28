@@ -1,5 +1,12 @@
-import { NVL, Node } from "@neo4j-nvl/base";
-import { InteractiveNvlWrapper, MouseEventCallbacks } from "@neo4j-nvl/react";
+// Lazily import only the needed parts for treeshaking
+import type { NVL, Node } from "@neo4j-nvl/base";
+import {
+  InteractiveNvlWrapper,
+  type MouseEventCallbacks,
+} from "@neo4j-nvl/react";
+// Mark as dynamic import to allow treeshaking
+const NVLComponents = () => import("@neo4j-nvl/react");
+
 import { useEffect, useMemo, useRef } from "react";
 import { Button, ButtonGroup } from "react-bootstrap";
 import { BsFullscreen, BsZoomIn, BsZoomOut } from "react-icons/bs";

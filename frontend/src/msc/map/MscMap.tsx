@@ -1,6 +1,6 @@
 import { useFetch } from "@clickapp/qui-core";
-import { Feature } from "ol";
-import { FeatureLike } from "ol/Feature";
+
+import Feature, { FeatureLike } from "ol/Feature";
 import { ViewOptions } from "ol/View";
 import { createEmpty, extend } from "ol/extent";
 import GeoJSON from "ol/format/GeoJSON";
@@ -46,60 +46,6 @@ export function MscMap({
           maxResolution={l.maxResolution}
         />
       ))}
-
-      {/*  <GeoJSONLayer
-        url={url("gcas")}
-        style={gcaStyle}
-        name="gcas"
-        title="GCAs"
-        maxResolution={150}
-        visible={isLayerVisible("gcas")}
-      />
-
-      <GeoJSONLayer
-        url={url("gcrefs")}
-        style={gcaStyle}
-        name="gcrefs"
-        title="GCREFs"
-        maxResolution={150}
-        visible={isLayerVisible("gcrefs")}
-      />
-
-      <GeoJSONLayer
-        url={url("cell-lists")}
-        style={gcaStyle}
-        name="cell-lists"
-        title="Cell Lists"
-        maxResolution={150}
-        visible={isLayerVisible("cell-lists")}
-      />
-
-      <GeoJSONLayer
-        url={url("cells")}
-        style={cellsAsCircleStyle}
-        name="cells-coverage"
-        title="Cells (Coverage)"
-        maxResolution={150}
-        visible={isLayerVisible("cells-coverage")}
-      />
-
-      <GeoJSONLayer
-        url={url("cells")}
-        style={cellStyle}
-        name="cells"
-        title="Cells"
-        maxResolution={450}
-        visible={isLayerVisible("cells")}
-      />
-
-      <GeoJSONLayer
-        url={url("ltes")}
-        style={cellStyle}
-        name="ltes"
-        title="LTE Confs"
-        maxResolution={450}
-        visible={isLayerVisible("ltes")}
-      /> */}
 
       {children}
 

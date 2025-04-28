@@ -1,8 +1,8 @@
-import { Overlay } from "ol";
 import { FeatureLike } from "ol/Feature";
 import { Point } from "ol/geom";
 import { PropsWithChildren, useEffect, useRef, useState } from "react";
 import { useMap } from "./Map";
+import Overlay from "ol/Overlay";
 
 export function InfoPopup({
   children,

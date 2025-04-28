@@ -36,14 +36,15 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
+    "analyze": "vite build --mode analyze",
     "up-qui": "npm rm  @clickapp/qui-bootstrap  @clickapp/qui-core && rm -rf node_modules/.cache/  && npm i  @clickapp/qui-core @clickapp/qui-bootstrap  --registry http://localhost:4873 && npm run dev",
     "up-local-qui": "npm rm @clickapp/qui-bootstrap  @clickapp/qui-core && rm -rf node_modules/.cache/  && npm i  @clickapp/qui-core @clickapp/qui-bootstrap  --registry http://localhost:4873 && npm run dev",
     "up-global-qui": "npm rm @clickapp/qui-bootstrap  @clickapp/qui-core && rm -rf node_modules/.cache/  && npm i  @clickapp/qui-core @clickapp/qui-bootstrap"
   },
   "devDependencies": {
+    "@eslint/js": "^9.22.0",
     "@types/jsts": "^0.17.24",
     "@types/ol": "^6.5.3",
-    "@eslint/js": "^9.22.0",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.3.4",
@@ -51,8 +52,10 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "rollup-plugin-visualizer": "^5.14.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.26.1",
     "vite": "^6.3.1"
-  }
+  },
+  "sideEffects": false
 }

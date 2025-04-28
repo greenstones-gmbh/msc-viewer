@@ -1,10 +1,10 @@
-import { Feature } from "ol";
 import OlVectorLayer from "ol/layer/Vector";
 import VectorSource from "ol/source/Vector";
 import { StyleLike } from "ol/style/Style";
 import { FlatStyleLike } from "ol/style/flat";
 import { useEffect, useRef } from "react";
 import { useMap } from "./Map";
+import Feature from "ol/Feature";
 
 export interface VectorLayerProps {
   name?: string;

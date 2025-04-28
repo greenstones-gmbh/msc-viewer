@@ -1,9 +1,9 @@
-import { Map as OlMap, View } from "ol";
 import TileLayer from "ol/layer/Tile";
 import "ol/ol.css";
 import { fromLonLat, toLonLat } from "ol/proj";
 import { OSM } from "ol/source";
-import { ViewOptions } from "ol/View";
+import View, { ViewOptions } from "ol/View";
+import { default as OlMap } from "ol/Map";
 import {
   createContext,
   PropsWithChildren,

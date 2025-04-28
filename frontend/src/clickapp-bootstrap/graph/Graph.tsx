@@ -1,5 +1,5 @@
-import { StyledCaption } from "@neo4j-nvl/base";
-import { Node, Relationship } from "@neo4j-nvl/base";
+// Import only the types to allow treeshaking
+import type { Node, Relationship, StyledCaption } from "@neo4j-nvl/base";
 
 export interface IGraph {
   nodes: INode[];
