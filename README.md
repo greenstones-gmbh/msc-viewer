@@ -4,6 +4,8 @@ A user-friendly, web-based interface for MSC/MSS that helps users easily access,
 
 ![screenshot 1](./docs/assets/p3.png)
 
+🚀 [Live Demo](https://demo.greenstones.de/msc-viewer)
+
 Since Nokia MSS/MSCs vary in versions and configurations, a one-size-fits-all UI is not practical. MscViewer is a toolkit for creating efficient and high-quality web applications for MSC/MSS, tailored to customer requirements.
 
 MscViewer connects to the MSC via terminal, replacing manual command input with a user-friendly web interface that offers high-level functions like configuration linking, object graph and map visualizations.
@@ -20,6 +22,12 @@ The tool helps visualize configurations on a map to provide location context. Pr
 * Export to CSV/Excel.
 * Customizable for specific requirements, such as GSM-R.
 * Manage multiple MSC instances through a unified interface.
+
+
+## 🚀 Live Demo
+
+Check out the live demo here: [https://demo.greenstones.de/msc-viewer](https://demo.greenstones.de/msc-viewer)
+
 
 ## Try using Docker Compose
 
@@ -122,8 +130,14 @@ MscViewer is 100% open-source (MIT License) and free to use. For organizations t
 ✔ Consulting: Architecture reviews, performance tuning  
 ✔ Long-Term Maintenance: Security patches, version upgrades  
 
+Visit our [product page](https://www.greenstones.de/solutions/msc-viewer) to learn more about how MSC Viewer can transform your Nokia MSC/MSS management.
+
 [**Contact Our Team**](mailto:info@greenstones.de)  
 
 
 ## Contributing
 Contributions are welcome! Open an issue or submit a pull request to suggest changes.
+
+## 👥 About Us
+
+We're [Greenstones GmbH](https://www.greenstones.de) — we build custom enterprise apps with a focus on GSM-R, Location Intelligence, and Geocoding.
