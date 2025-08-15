@@ -5,14 +5,21 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Spliterator;
+import java.util.Spliterators;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 import org.neo4j.driver.Query;
 import org.neo4j.driver.Record;
+import org.neo4j.driver.Session;
 import org.neo4j.driver.Transaction;
 import org.neo4j.driver.Value;
 import org.neo4j.driver.Values;
@@ -36,6 +43,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.SneakyThrows;
+import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 
 @Component
@@ -171,19 +179,46 @@ public class MscGraphService {
 		LoadGraphJob job = new LoadGraphJob(force);
 		Map<String, List<Obj>> data = msc.execute(job);
 
-		graphService.runJob(tx -> {
+		long start = System.currentTimeMillis();
+
+		graphService.runBatchJob(session -> {
+
+			Transaction tx = session.beginTransaction();
 			deleteAll(mscId, tx);
+			tx.commit();
 
-			createNodes(mscId, msc.getTypes(), data, tx);
+			tx = session.beginTransaction();
+			createIndexes(mscId, msc.getTypes(), data, tx);
+			tx.commit();
 
+			createNodes(mscId, msc.getTypes(), data, session);
+
+			tx = session.beginTransaction();
 			String cmd = "CREATE (p:MscGraph { mscId: $mscId, date: $date})";
 			tx.run(cmd,
 					Values.parameters("mscId", mscId, "date", Instant.now().truncatedTo(ChronoUnit.MILLIS).toString()));
 
-			log.info(
-					"graph updated msc:{}", mscId);
+			tx.commit();
 
 			return null;
+		});
+
+		long end = System.currentTimeMillis();
+		log.info("graph updated msc: {} in {} ms", mscId, end - start);
+
+	}
+
+	private void createIndexes(String mscId, Map<String, ConfigType> types, Map<String, List<Obj>> data,
+			Transaction tx) {
+		data.keySet().stream().forEach(k -> {
+			ConfigType configType = types.get(k);
+			List<Obj> list = data.get(k);
+			if (configType.getNode() != null && list != null) {
+				String label = configType.getNode().getLabel();
+				String q = "CREATE INDEX " + label + "_id_index IF NOT EXISTS FOR (p:" + label + ") ON (p.id) ";
+				log.info("createIndex node {} label: {}", k, q);
+				tx.run(q);
+			}
 
 		});
 
@@ -208,15 +243,30 @@ public class MscGraphService {
 		}
 	}
 
-	private void createNodes(String mscId, Map<String, ConfigType> types, Map<String, List<Obj>> data, Transaction tx) {
+	private void createNodes(String mscId, Map<String, ConfigType> types, Map<String, List<Obj>> data,
+			Session session) {
+		long start = System.currentTimeMillis();
 		Graph graph = createGraph(types, data);
-		graph.getNodes().stream().map(n -> n.toCreateQuery(mscId)).forEach(q -> {
-			tx.run(q);
-		});
+		log.info("createGraph {} in {} msc, nodes: {}, rels:{} ", mscId, System.currentTimeMillis() - start,
+				graph.getNodes().size(), graph.getRelations().size());
 
-		graph.getRelations().stream().map(n -> n.toCreateQuery(mscId)).forEach(q -> {
-			tx.run(q);
-		});
+		start = System.currentTimeMillis();
+
+		Stream<Query> nodeQueries = graph.getNodes().stream().map(n -> n.toCreateQuery(mscId));
+		runQueries(session, nodeQueries);
+
+		Stream<Query> relqueries = graph.getRelations().stream().map(n -> n.toCreateQuery(mscId));
+		runQueries(session, relqueries);
+
+		// graph.getNodes().stream().map(n -> n.toCreateQuery(mscId)).forEach(q -> {
+		// tx.run(q);
+		// });
+
+		// graph.getRelations().stream().map(n -> n.toCreateQuery(mscId)).forEach(q -> {
+		// tx.run(q);
+		// });
+		log.info("updateGraph {} in {} msc", mscId, System.currentTimeMillis() - start);
+
 	}
 
 	private void deleteAll(String mscId, Transaction tx) {
@@ -388,6 +438,45 @@ public class MscGraphService {
 
 	public static Map<String, String> remap(Map<String, String> v, String prefix) {
 		return v.keySet().stream().collect(Collectors.toMap(k -> prefix + k, k -> v.get(k)));
+	}
+
+	private void runQueries(Session session, Stream<Query> queries) {
+		var qs = batchStream(queries, 1000).toList();
+		int index = 0;
+		for (List<Query> batch : qs) {
+			long start = System.currentTimeMillis();
+			try (Transaction tx = session.beginTransaction()) {
+				for (Query q : batch) {
+					tx.run(q);
+				}
+				tx.commit();
+				log.info("Committed batch {}/{} of size {} in {} ms ", index, qs.size(), batch.size(),
+						System.currentTimeMillis() - start);
+			}
+			index++;
+		}
+
+	}
+
+	static <T> Stream<List<T>> batchStream(Stream<T> stream, int batchSize) {
+		Iterator<T> iterator = stream.iterator();
+
+		return StreamSupport.stream(new Spliterators.AbstractSpliterator<List<T>>(Long.MAX_VALUE, Spliterator.ORDERED) {
+			@Override
+			public boolean tryAdvance(Consumer<? super List<T>> action) {
+				List<T> batch = new ArrayList<>(batchSize);
+				int i = 0;
+				while (i < batchSize && iterator.hasNext()) {
+					batch.add(iterator.next());
+					i++;
+				}
+				if (!batch.isEmpty()) {
+					action.accept(batch);
+					return true;
+				}
+				return false;
+			}
+		}, false);
 	}
 
 }

@@ -13,6 +13,7 @@ import org.neo4j.driver.AccessMode;
 import org.neo4j.driver.AuthTokens;
 import org.neo4j.driver.GraphDatabase;
 import org.neo4j.driver.Record;
+import org.neo4j.driver.Session;
 import org.neo4j.driver.SessionConfig;
 import org.neo4j.driver.Transaction;
 import org.neo4j.driver.Value;
@@ -74,6 +75,22 @@ public class GraphService {
 				Transaction tx = session.beginTransaction();
 				result = job.apply(tx);
 				tx.commit();
+			}
+
+		}
+		return result;
+	}
+
+	public <Result> Result runBatchJob(Function<Session, Result> job) {
+		Result result = null;
+		try (var driver = GraphDatabase.driver(uri, AuthTokens.basic(user, password))) {
+			driver.verifyConnectivity();
+
+			var sessionConfig = SessionConfig.builder().withDefaultAccessMode(AccessMode.WRITE).withDatabase(database)
+					.build();
+
+			try (var session = driver.session(sessionConfig)) {
+				result = job.apply(session);
 			}
 
 		}
