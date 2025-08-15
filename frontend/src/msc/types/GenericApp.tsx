@@ -1,5 +1,5 @@
 import { Route } from "react-router-dom";
-
+import { format } from "date-fns";
 import DashboardPage from "../DashboardPage";
 
 import { SignInPage } from "@clickapp/qui-bootstrap";
@@ -61,11 +61,17 @@ export function GenericApp() {
           public={<></>}
           login={
             <SignInPage title="MSC Viewer">
-              <Alert variant="warning" className="mt-4 mb-0">
+              {/* <Alert variant="warning" className="mt-4 mb-0">
                 Login with{" "}
                 <span className="font-monospace">admin/admin1a!</span> to try
                 the demo.
-              </Alert>
+              </Alert> */}
+              <div className="mt-4 text-center">
+                <small className="" style={{ color: "#999", fontSize: 10 }}>
+                  Build:{" "}
+                  {format(new Date(__BUILD_TIME__), "yyyy-MM-dd HH:mm:ss")}
+                </small>
+              </div>
             </SignInPage>
           }
         />

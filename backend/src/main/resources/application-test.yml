@@ -1,0 +1,49 @@
+msc-viewer:
+  neo4j:
+    uri: neo4j://localhost
+    user: neo4j
+    password: admin123
+    database: neo4j
+
+  graph:
+    updateOnStartup: true
+    forceReloadOnStartup: false
+
+  cache:
+    path: /Users/artfh/Projects/SBBAM-projects/msc-viewer-data/msc-viewer
+
+  instances:
+    - id: MSS-01
+      host: 10.165.255.6
+      port: 22
+      user: AREAMG
+      password: xxx
+      badges:
+        - label: INTG
+      gis:
+        cells:
+          path: /Users/artfh/Projects/SBBAM-projects/msc-viewer/backend/data/msc-intg/cells.txt
+          crs: EPSG:4326
+          key: ID
+          x: X
+          y: Y
+
+    - id: OLBZ-MSS-02
+      host: 10.163.128.166
+      port: 22
+      user: AREAMG
+      password: xxx
+      badges:
+        - label: PROD
+          style: primary
+      gis:
+        cells:
+          path: /Users/artfh/Projects/SBBAM-projects/msc-viewer/backend/data/msc-prod/cells.txt
+          crs: EPSG:21781
+          key: ID
+          x: X
+          y: Y
+
+  access:
+    user: admin
+    pwd: admin1a!

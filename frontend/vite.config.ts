@@ -4,6 +4,9 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  define: {
+    __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
+  },
   plugins: [react()],
   css: {
     postcss: {

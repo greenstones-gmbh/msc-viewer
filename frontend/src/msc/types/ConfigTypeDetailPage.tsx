@@ -44,12 +44,12 @@ export function ConfigTypeDetailPage({
   const detailModel = useDetailModel(type, detailProps!);
 
   const { graphAvailable } = useGraphContext();
-  var defaultTab =
+  const defaultTab =
     graphAvailable && graphQueries && graphQueries.length > 0
       ? "graph"
       : "settings";
 
-  defaultTab = "map";
+  //defaultTab = "map";
 
   const graphStyles = useGraphStyles();
 

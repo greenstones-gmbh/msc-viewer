@@ -35,9 +35,14 @@ function getDefaultView(): ViewOptions {
     } catch (error) {}
   }
 
+  // return {
+  //   center: fromLonLat([8.625286, 50.181481]),
+  //   zoom: 10,
+  // };
+
   return {
-    center: fromLonLat([8.625286, 50.181481]),
-    zoom: 10,
+    center: fromLonLat([8.809347739037175, 46.79039239308162]),
+    zoom: 8,
   };
 }
 
