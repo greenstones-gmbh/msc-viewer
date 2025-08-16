@@ -5,7 +5,9 @@ import { useParams } from "react-router-dom";
 export interface IGraphContext {
   graphAvailable: boolean;
   graphDatabaseAvailable: boolean;
+  status?: string;
   reload?: () => Promise<void>;
+  reloadGraphStatus?: () => void;
   date?: string;
   isPending: boolean;
 }
@@ -42,11 +44,12 @@ export function GraphContextProvider({ children }: PropsWithChildren<{}>) {
   };
 
   const c = isSuccess
-    ? { ...data!, reload: reloadGraph, isPending }
+    ? { ...data!, reload: reloadGraph, isPending, reloadGraphStatus: reload }
     : {
         isPending,
         graphAvailable: false,
         graphDatabaseAvailable: false,
+        reloadGraphStatus: reload,
       };
 
   return <GraphContext.Provider value={c}>{children}</GraphContext.Provider>;

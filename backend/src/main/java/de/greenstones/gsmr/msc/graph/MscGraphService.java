@@ -176,6 +176,11 @@ public class MscGraphService {
 			msc.getMscService().clearCache();
 		}
 
+		graphService.runJob(tx -> {
+			tx.run(createGraphInfoQuery(mscId, "loading"));
+			return null;
+		});
+
 		LoadGraphJob job = new LoadGraphJob(force);
 		Map<String, List<Obj>> data = msc.execute(job);
 
@@ -185,6 +190,7 @@ public class MscGraphService {
 
 			Transaction tx = session.beginTransaction();
 			deleteAll(mscId, tx);
+			// tx.run(createGraphInfoQuery(mscId, "loading"));
 			tx.commit();
 
 			tx = session.beginTransaction();
@@ -194,10 +200,8 @@ public class MscGraphService {
 			createNodes(mscId, msc.getTypes(), data, session);
 
 			tx = session.beginTransaction();
-			String cmd = "CREATE (p:MscGraph { mscId: $mscId, date: $date})";
-			tx.run(cmd,
-					Values.parameters("mscId", mscId, "date", Instant.now().truncatedTo(ChronoUnit.MILLIS).toString()));
-
+			Query q = createGraphInfoQuery(mscId, "loaded");
+			tx.run(q);
 			tx.commit();
 
 			return null;
@@ -206,6 +210,21 @@ public class MscGraphService {
 		long end = System.currentTimeMillis();
 		log.info("graph updated msc: {} in {} ms", mscId, end - start);
 
+	}
+
+	private Query createGraphInfoQuery(String mscId, String status) {
+		String cmd = """
+				MERGE (p:MscGraph {mscId: $mscId})
+				ON CREATE SET p.date = $date, p.status = $status
+				ON MATCH SET p.date = $date, p.status = $status
+				""";
+
+		var v = Values.parameters("mscId", mscId, "date",
+				Instant.now().truncatedTo(ChronoUnit.MILLIS).toString(),
+				"status", status);
+
+		Query q = new Query(cmd, v);
+		return q;
 	}
 
 	private void createIndexes(String mscId, Map<String, ConfigType> types, Map<String, List<Obj>> data,
@@ -275,7 +294,7 @@ public class MscGraphService {
 		tx.run("MATCH (" + label(mscId, "") + ")-[r]-(" + label(mscId, "") + ") DELETE r");
 		tx.run("MATCH (n" + label(mscId, "") + ") DELETE n");
 
-		tx.run("MATCH (p:MscGraph WHERE p.mscId=\"" + mscId + "\") DELETE p");
+		// tx.run("MATCH (p:MscGraph WHERE p.mscId=\"" + mscId + "\") DELETE p");
 
 	}
 

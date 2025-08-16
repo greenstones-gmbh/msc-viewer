@@ -38,8 +38,10 @@ public class MscGraphController {
 			List<Record> query = graphService.query("MATCH (p:MscGraph WHERE p.mscId = '" + mscId + "' ) return p");
 			if (query.size() == 1) {
 
+				var status = query.get(0).get("p").get("status").asString();
+
 				return GraphInfo.builder().graphDatabaseAvailable(true).graphAvailable(true)
-						.date(query.get(0).get("p").get("date").asString()).build();
+						.date(query.get(0).get("p").get("date").asString()).status(status).build();
 			}
 
 			return GraphInfo.builder().graphDatabaseAvailable(true).graphAvailable(false).build();
@@ -57,6 +59,7 @@ public class MscGraphController {
 		boolean graphAvailable;
 		boolean graphDatabaseAvailable;
 		String date;
+		String status;
 
 	}
 
@@ -73,7 +76,7 @@ public class MscGraphController {
 	@PostMapping("/{mscId}/update")
 	@SneakyThrows
 	public Object update(@PathVariable String mscId) {
-		mscGraphService.updateGraph(mscId, true);
+		mscGraphService.updateGraph(mscId, false);
 		log.info("update done");
 		return Collections.singletonMap("status", "ok");
 	}

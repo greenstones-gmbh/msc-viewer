@@ -1,4 +1,4 @@
-import { Nav, Navbar } from "react-bootstrap";
+import { Button, Nav, Navbar, Spinner } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { useGraphContext } from "./MscGraphContext";
 
@@ -14,16 +14,25 @@ import { BsHouse } from "react-icons/bs";
 import { HiOutlineServer } from "react-icons/hi2";
 import { PiGraphBold } from "react-icons/pi";
 
-import { PropsWithChildren, ReactNode } from "react";
+import { PropsWithChildren, ReactNode, useEffect, useRef } from "react";
 import { useMapLayers } from "./types/ConfigTypesContext";
 import { PiMapPinSimpleAreaFill } from "react-icons/pi";
 
 function TopNav() {
   const { mscId } = useParams();
-  const { graphAvailable, graphDatabaseAvailable, date, reload, isPending } =
-    useGraphContext();
+  const {
+    graphAvailable,
+    graphDatabaseAvailable,
+    date,
+    reload,
+    isPending,
+    status,
+    reloadGraphStatus,
+  } = useGraphContext();
 
   const layers = useMapLayers();
+
+  useInterval(reloadGraphStatus ? reloadGraphStatus : () => {}, 5000);
 
   return (
     <>
@@ -43,20 +52,32 @@ function TopNav() {
         </Navbar.Text>
       )}
 
-      {!isPending && graphDatabaseAvailable && (
+      {graphDatabaseAvailable && status !== "loading" && (
         <ActionButton
           variant="outline-primary"
           size="sm"
-          onClick={async (e) => await reload?.()}
+          onClick={async (e) =>
+            reload?.().then(() => {
+              reloadGraphStatus?.();
+            })
+          }
         >
           {graphAvailable ? "Update graph" : "Load data and create graph"}
         </ActionButton>
       )}
 
-      {!isPending && graphAvailable && date && (
+      {graphAvailable && date && status !== "loading" && (
         <Navbar.Text className="ms-2 text-muted">
           Created: <DateFormatter isoString={date} />{" "}
         </Navbar.Text>
+      )}
+
+      {graphAvailable && status === "loading" && (
+        <>
+          <Navbar.Text className="ms-2 text-muted">
+            <Spinner animation="border" size="sm" /> Updating graph...
+          </Navbar.Text>
+        </>
       )}
 
       {/* <LayoutSwitcherDropdown className="ms-auto me-1" /> */}
@@ -135,4 +156,25 @@ export function SidebarNav({ children }: PropsWithChildren) {
       </Nav>
     </>
   );
+}
+
+export function useInterval(callback: () => void, delay: number) {
+  const savedCallback = useRef(callback);
+
+  // Remember the latest callback if it changes.
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  // Set up the interval.
+  useEffect(() => {
+    // Don't schedule if no delay is specified.
+    if (delay === null) {
+      return;
+    }
+
+    const id = setInterval(() => savedCallback.current(), delay);
+
+    return () => clearInterval(id);
+  }, [delay]);
 }
