@@ -1,5 +1,5 @@
-import { Page, PageHeader } from "@clickapp/qui-bootstrap";
-import { useFetch } from "@clickapp/qui-core";
+import { Page, PageHeader } from "@greenstones/qui-bootstrap";
+import { useFetch } from "@greenstones/qui-core";
 import { Badge, Card, Col, Row } from "react-bootstrap";
 
 import { Link } from "react-router-dom";

@@ -1,7 +1,7 @@
 import { Button } from "react-bootstrap";
 
 import { PropsWithChildren, ReactNode } from "react";
-import { PageHeader } from "@clickapp/qui-bootstrap";
+import { PageHeader } from "@greenstones/qui-bootstrap";
 
 export function MscPageHeader({
   cmd,

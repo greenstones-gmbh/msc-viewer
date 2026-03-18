@@ -11,7 +11,7 @@ import {
   useMscObj,
 } from "../../msc/MsgObj";
 
-import { useDetaiModelBuilder } from "@clickapp/qui-core";
+import { useDetaiModelBuilder } from "@greenstones/qui-core";
 import { GraphView } from "../../clickapp-bootstrap/graph/GraphView";
 import { GraphTabTitle } from "../../msc/GraphTabTitle";
 import { useGraphContext } from "../../msc/MscGraphContext";
@@ -28,7 +28,7 @@ function useDetailModel() {
       prop("BTS NUMBER", {
         linkTo: (e: MscObj) =>
           createBtsLink(mscId, getMscPropValue(e, "BTS NUMBER")),
-      })
+      }),
     );
     b.addLine(prop("BTS NAME"));
     b.block();
@@ -42,10 +42,10 @@ function useDetailModel() {
             "context.mscId",
             getMscPropValue(entity, "LAC"),
             getMscPropValue(entity, "MCC"),
-            getMscPropValue(entity, "MNC")
+            getMscPropValue(entity, "MNC"),
           );
         },
-      })
+      }),
     );
     b.block();
 
@@ -95,10 +95,10 @@ function graphTabs(mscId: string, id: string, v?: MscObj) {
         queries={[
           `match p=(gca:LTEConfig:${mscLabel} {ECI:'${getMscPropValue(
             v,
-            "ECI"
+            "ECI",
           )}',EMCC:'${getMscPropValue(v, "EMCC")}',EMNC:'${getMscPropValue(
             v,
-            "EMNC"
+            "EMNC",
           )}'})--(:${mscLabel}) return p`,
         ]}
       />

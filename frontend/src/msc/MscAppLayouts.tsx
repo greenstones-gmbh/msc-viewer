@@ -8,8 +8,8 @@ import {
   NavbarAuthButtons,
   NavbarBrand,
   NavLink,
-} from "@clickapp/qui-bootstrap";
-import { DateFormatter } from "@clickapp/qui-core";
+} from "@greenstones/qui-bootstrap";
+import { DateFormatter } from "@greenstones/qui-core";
 import { BsHouse } from "react-icons/bs";
 import { HiOutlineServer } from "react-icons/hi2";
 import { PiGraphBold } from "react-icons/pi";

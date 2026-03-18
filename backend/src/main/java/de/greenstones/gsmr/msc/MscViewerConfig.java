@@ -98,17 +98,19 @@ public class MscViewerConfig {
 					}
 
 					var dataProviders = new HashMap<String, DataProvider>();
-					msc.dataProviders.forEach((k, conf) -> {
-						if (conf.bean != null) {
-							if (availableDataProviders.containsKey(conf.bean)) {
-								dataProviders.put(k, availableDataProviders.get(k));
+					if (msc.dataProviders != null) {
+						msc.dataProviders.forEach((k, conf) -> {
+							if (conf.bean != null) {
+								if (availableDataProviders.containsKey(conf.bean)) {
+									dataProviders.put(k, availableDataProviders.get(k));
+								}
+							} else {
+								CsvDataProvider p = new CsvDataProvider(conf.path, conf.key);
+								dataProviders.put(k, p);
 							}
-						} else {
-							CsvDataProvider p = new CsvDataProvider(conf.path, conf.key);
-							dataProviders.put(k, p);
-						}
 
-					});
+						});
+					}
 
 					MscInstance r = new MscInstance(configTypes, s, featureProviders, dataProviders);
 

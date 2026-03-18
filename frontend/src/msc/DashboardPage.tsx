@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { BaseGraphView } from "../clickapp-bootstrap/graph/BaseGraphView";
 import { IGraph, IGraphStyles } from "../clickapp-bootstrap/graph/Graph";
 
-import { Page, PageHeader } from "@clickapp/qui-bootstrap";
+import { Page, PageHeader } from "@greenstones/qui-bootstrap";
 
 export default function DashboardPage({
   graph,

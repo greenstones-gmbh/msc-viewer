@@ -1,5 +1,11 @@
 import { FeatureLike } from "ol/Feature";
-import { PropsWithChildren, useEffect, useRef, useState } from "react";
+import {
+  PropsWithChildren,
+  ReactElement,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { useMap } from "./Map";
 
 export function Tooltip({
@@ -8,11 +14,11 @@ export function Tooltip({
   layerNames = [],
 }: PropsWithChildren<{
   layerNames?: string[];
-  tooltip?: (features: FeatureLike[]) => JSX.Element;
+  tooltip?: (features: FeatureLike[]) => ReactElement;
 }>) {
   const map = useMap();
 
-  const popupRef = useRef<any>();
+  const popupRef = useRef<any>(undefined);
   const [selection, setSelection] = useState<FeatureLike[] | undefined>();
 
   const [point, setPoint] = useState<any | undefined>();
@@ -32,7 +38,7 @@ export function Tooltip({
       },
       {
         layerFilter: (layer) => true,
-      }
+      },
     );
 
     if (foundFeatures && foundFeatures.length > 0) {

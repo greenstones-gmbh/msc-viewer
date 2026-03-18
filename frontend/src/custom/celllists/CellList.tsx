@@ -13,7 +13,7 @@ import {
   useMscObj,
 } from "../../msc/MsgObj";
 
-import { createDetails } from "@clickapp/qui-core";
+import { createDetails } from "@greenstones/qui-core";
 import { GraphView } from "../../clickapp-bootstrap/graph/GraphView";
 import { useGraphContext } from "../../msc/MscGraphContext";
 import { MscGraphStyles } from "../CustomGraphStyles";
@@ -63,7 +63,7 @@ function graphTabs(
   mscId: string,
   id: string,
   cellColumns: any,
-  gcaColumns: any
+  gcaColumns: any,
 ) {
   const mscLabel = encodeAsLabel(mscId);
   return [

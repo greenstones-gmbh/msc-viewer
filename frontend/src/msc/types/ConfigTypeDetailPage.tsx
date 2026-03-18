@@ -1,4 +1,4 @@
-import { createDetails, DetailModelBuilder } from "@clickapp/qui-core";
+import { createDetails, DetailModelBuilder } from "@greenstones/qui-core";
 import { DependencyList, useMemo } from "react";
 import { Tab } from "react-bootstrap";
 import { useParams } from "react-router-dom";
@@ -128,20 +128,20 @@ export function useDetailModel(type: string, props?: Prop[][]) {
                   ? (entity) => formatLink(mscId, p.linkTo!, entity)
                   : undefined,
                 ...(p.label ? { label: p.label } : {}),
-              })
+              }),
             );
           }
         });
         if (index !== props.length - 1) b.block();
       });
     },
-    [type]
+    [type],
   );
 }
 
 export function useDetaiModelBuilder<Type>(
   configurer?: (builder: DetailModelBuilder<Type>) => void,
-  deps?: DependencyList
+  deps?: DependencyList,
 ) {
   return useMemo(() => {
     return createDetails<Type>(configurer);
@@ -151,13 +151,13 @@ export function useDetaiModelBuilder<Type>(
 export function createQueries(
   mscId: string,
   id: string,
-  graphQueries?: string[]
+  graphQueries?: string[],
 ): string[] {
   console.log("createQueries", mscId, id, graphQueries);
 
   if (!graphQueries) return [];
   const d = graphQueries.map((q) =>
-    formatTemplate(q, { MSC: "`" + mscId + "`", ID: id })
+    formatTemplate(q, { MSC: "`" + mscId + "`", ID: id }),
   );
   console.log("createQueries", d);
 
@@ -168,7 +168,7 @@ function MapView({ type, id }: any) {
   const mscId = useMscInstance();
   const { view, features } = useFeaturePresenter(
     urlWithBasePath(`/api/gis/msc/${mscId}/${type}/${id}`),
-    selectionStyle(type)
+    selectionStyle(type),
   );
   return (
     <MscMap visibleLayers={[type]} view={view}>

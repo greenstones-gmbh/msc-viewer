@@ -6,8 +6,8 @@ import {
   Paging,
   QueryInput,
   QuickTable,
-} from "@clickapp/qui-bootstrap";
-import { Column, exportToCsv } from "@clickapp/qui-core";
+} from "@greenstones/qui-bootstrap";
+import { Column, exportToCsv } from "@greenstones/qui-core";
 import { ReactNode } from "react";
 import { MscPageHeader } from "./MscPageHeader";
 import { MscObj, MscObjListResult, useMscContext } from "./MsgObj";

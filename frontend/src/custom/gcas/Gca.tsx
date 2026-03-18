@@ -13,7 +13,7 @@ import {
   useMscObj,
 } from "../../msc/MsgObj";
 
-import { createDetails } from "@clickapp/qui-core";
+import { createDetails } from "@greenstones/qui-core";
 import { GraphView } from "../../clickapp-bootstrap/graph/GraphView";
 import { useGraphContext } from "../../msc/MscGraphContext";
 import { MscGraphStyles } from "../CustomGraphStyles";
@@ -62,7 +62,7 @@ function graphTabs(
   mscId: string,
   id: string,
   btsColumns: any,
-  gcarefColumns: any
+  gcarefColumns: any,
 ) {
   const mscLabel = encodeAsLabel(mscId);
   return [
@@ -79,7 +79,7 @@ function graphTabs(
         <EmbeddedTable
           url={`/api/graph/msc/${mscId}/gcas/${id}/rels/gcrefs`}
           columns={gcarefColumns.filter(
-            (v: any, index: number) => !(index === 1 || index === 2)
+            (v: any, index: number) => !(index === 1 || index === 2),
           )}
           initialSortKey={createMscSortKey("GCREF")}
         />

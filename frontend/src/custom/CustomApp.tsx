@@ -5,8 +5,8 @@ import DashboardPage from "../msc/DashboardPage";
 //import { SignInPage } from "./clickapp-bootstrap/SignInPage";
 
 //import { AppRoutes } from "./clickapp/AppRoutes";
-import { NavLink, SignInPage } from "@clickapp/qui-bootstrap";
-import { AppRoutes, ModalContextProvider } from "@clickapp/qui-core";
+import { NavLink, SignInPage } from "@greenstones/qui-bootstrap";
+import { AppRoutes, ModalContextProvider } from "@greenstones/qui-core";
 import { TokenAuth } from "../clickapp/auth/TokenAuth";
 import {
   MscNoSidebarLayout,
@@ -29,7 +29,7 @@ import { LocationAreas, LocationAreasContainer } from "./lacs/LocationAreas";
 import { LteConfig } from "./ltes/LteConfig";
 import { LteConfigs, LteConfigsContainer } from "./ltes/LteConfigs";
 
-import "@clickapp/qui-bootstrap/dist/style.css";
+//import "@greenstones/qui-bootstrap/dist/style.css";
 
 import { Bs1Circle, Bs2Circle, Bs3Circle } from "react-icons/bs";
 import { MdOutlineCellTower } from "react-icons/md";

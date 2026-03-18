@@ -40,11 +40,11 @@ function KeycloakProvider({ children }: any) {
   const token = keycloak.token;
 
   const redirectToLogin = (targetPath?: string) => {
-    window.location.replace(
-      keycloak.createLoginUrl({
+    keycloak
+      .createLoginUrl({
         redirectUri: `${window.location.origin}${targetPath}`,
       })
-    );
+      .then((v) => window.location.replace(v));
   };
 
   return (

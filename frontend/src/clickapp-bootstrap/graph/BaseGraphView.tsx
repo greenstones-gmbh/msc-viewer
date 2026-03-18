@@ -55,7 +55,7 @@ export function BaseGraphView({
   const zoomAll = () => {
     nvlRef.current?.fit(
       nvlRef.current?.getNodes().map((n: any) => n.id),
-      {}
+      {},
     );
   };
 
@@ -90,11 +90,11 @@ export function BaseGraphView({
                 graphRef.current?.relationships.map((n: any) => n.id) || [];
 
               const newNodes = g.nodes.filter(
-                (n) => existingNodeIds.indexOf(n) === -1
+                (n) => existingNodeIds.indexOf(n) === -1,
               );
 
               const newRels = g.relationships.filter(
-                (n) => existingRelIds.indexOf(n) === -1
+                (n) => existingRelIds.indexOf(n) === -1,
               );
 
               graphRef.current.nodes = [
@@ -157,7 +157,7 @@ export function BaseGraphView({
         <InteractiveNvlWrapper
           ref={nvlRef}
           nvlOptions={{
-            useWebGL: false,
+            disableWebGL: true,
             renderer: "canvas",
             minZoom: 1,
             allowDynamicMinZoom: true,

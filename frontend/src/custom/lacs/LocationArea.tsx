@@ -1,7 +1,7 @@
 import { Tab } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
-import { createDetails, filterColumns } from "@clickapp/qui-core";
+import { createDetails, filterColumns } from "@greenstones/qui-core";
 import { GraphView } from "../../clickapp-bootstrap/graph/GraphView";
 import { EmbeddedTable } from "../../msc/EmbeddedTable";
 import { GraphTabTitle } from "../../msc/GraphTabTitle";

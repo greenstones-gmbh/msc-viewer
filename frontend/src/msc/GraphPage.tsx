@@ -1,4 +1,4 @@
-import { ActionButton, MessagePage, Page } from "@clickapp/qui-bootstrap";
+import { ActionButton, MessagePage, Page } from "@greenstones/qui-bootstrap";
 import { useState } from "react";
 import { Button, ButtonToolbar, Form, InputGroup } from "react-bootstrap";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -33,9 +33,9 @@ export function GraphPage({ styles }: { styles: IGraphStyles }) {
           .join(" and ");
 
       q = `MATCH (n:\`${mscId}\`) where ${where(
-        "n"
+        "n",
       )} return n limit 300; MATCH p=(n:\`${mscId}\`  where ${where(
-        "n"
+        "n",
       )})--(nn:\`${mscId}\`  where ${where("nn")}) return p limit 300;`;
     }
 
@@ -55,6 +55,8 @@ export function GraphPage({ styles }: { styles: IGraphStyles }) {
       </MessagePage>
     );
 
+  console.log(">>>>>", { isPending });
+
   return (
     <Page header="Graph">
       <ButtonToolbar className="ps-1 pb-2">
@@ -71,7 +73,7 @@ export function GraphPage({ styles }: { styles: IGraphStyles }) {
           </InputGroup>
         </Form>
       </ButtonToolbar>
-      {!isPending && <GraphView styles={styles} query={query} />}
+      {graphAvailable && <GraphView styles={styles} query={query} />}
     </Page>
   );
 }

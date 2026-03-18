@@ -1,4 +1,4 @@
-import { useFetch } from "@clickapp/qui-core";
+import { useFetch } from "@greenstones/qui-core";
 import GeoJSON from "ol/format/GeoJSON";
 import { PropsWithChildren, useMemo } from "react";
 

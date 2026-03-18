@@ -3,9 +3,9 @@ import Breadcrumb from "react-bootstrap/Breadcrumb";
 import { Link } from "react-router-dom";
 import { MscObjView } from "./MscObjView";
 
-import { DetailModelView, Page, Tabs } from "@clickapp/qui-bootstrap";
-import { DetailModel } from "@clickapp/qui-core";
-import { PropsWithChildren, ReactNode } from "react";
+import { DetailModelView, Page, Tabs } from "@greenstones/qui-bootstrap";
+import { DetailModel } from "@greenstones/qui-core";
+import { PropsWithChildren, ReactElement, ReactNode } from "react";
 import { MscPageHeader } from "./MscPageHeader";
 import { MscObj, useMscContext } from "./MsgObj";
 
@@ -28,7 +28,7 @@ export default function MscObjPage({
   parentLabel: string;
   title: (v: MscObj) => ReactNode;
   shortTitle?: (v: MscObj) => ReactNode;
-  tabs?: (v: MscObj) => JSX.Element[] | undefined;
+  tabs?: (v: MscObj) => ReactElement[] | undefined;
   headerAddon?: (v: MscObj) => ReactNode;
 }>) {
   const { data, reload, error, isPending } = objData;

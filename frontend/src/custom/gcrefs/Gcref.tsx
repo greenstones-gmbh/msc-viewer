@@ -11,7 +11,7 @@ import {
   useMscObj,
 } from "../../msc/MsgObj";
 
-import { useDetaiModelBuilder } from "@clickapp/qui-core";
+import { useDetaiModelBuilder } from "@greenstones/qui-core";
 import { GraphView } from "../../clickapp-bootstrap/graph/GraphView";
 import { useGraphContext } from "../../msc/MscGraphContext";
 import { MscGraphStyles } from "../CustomGraphStyles";
@@ -30,7 +30,7 @@ function useDetailModel() {
     b.addLine(
       prop("GCAC", {
         linkTo: (e) => createGcaLink(mscId, getMscPropValue(e, "GCAC")),
-      })
+      }),
     );
     b.block();
     b.addLine(prop("GROUP NAME"));

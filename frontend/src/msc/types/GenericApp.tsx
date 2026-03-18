@@ -2,19 +2,19 @@ import { Route } from "react-router-dom";
 
 import DashboardPage from "../DashboardPage";
 
-import { SignInPage } from "@clickapp/qui-bootstrap";
-import { AppRoutes, ModalContextProvider } from "@clickapp/qui-core";
+import { SignInPage } from "@greenstones/qui-bootstrap";
+import { AppRoutes, ModalContextProvider } from "@greenstones/qui-core";
 import { TokenAuth } from "../../clickapp/auth/TokenAuth";
 import { GraphPage } from "../GraphPage";
 import InstancesPage from "../InstancesPage";
 import { MscNoSidebarLayout, MssAppLayout, SidebarNav } from "../MscAppLayouts";
 import { GraphContextProvider } from "../MscGraphContext";
 
-import "@clickapp/qui-bootstrap/dist/style.css";
+//import "@greenstones/qui-bootstrap/dist/style.css";
 
 import { ConfigTypesContextProvider } from "./ConfigTypesContext";
 
-import { NavLink } from "@clickapp/qui-bootstrap";
+import { NavLink } from "@greenstones/qui-bootstrap";
 import { IconType } from "react-icons";
 import { MdFolderOpen, MdOutlineCellTower } from "react-icons/md";
 import { TbChartArea, TbSignalLte } from "react-icons/tb";

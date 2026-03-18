@@ -17,7 +17,7 @@ import {
   QueryDropdown,
   QueryInput,
   SortingColumnHeader,
-} from "@clickapp/qui-bootstrap";
+} from "@greenstones/qui-bootstrap";
 
 import {
   Filters,
@@ -26,8 +26,8 @@ import {
   Sorters,
   useArray,
   useAuth,
-} from "@clickapp/qui-core";
-import { NavLink } from "@clickapp/qui-bootstrap";
+} from "@greenstones/qui-core";
+import { NavLink } from "@greenstones/qui-bootstrap";
 
 export function AppRoutes(props: any) {
   const { children } = props;
@@ -278,8 +278,8 @@ function TableExample1() {
       Filters.objectContains<TestQuery>("query1"),
       Filters.isEq<TestRow, TestQuery>("b", "type1"),
       Filters.isSatisfiedBy<TestRow, TestQuery>(
-        (v, q) => !q?.deleted || v.c === "deleted"
-      )
+        (v, q) => !q?.deleted || v.c === "deleted",
+      ),
     ),
     sorter: Sorters.objectProps(),
   });

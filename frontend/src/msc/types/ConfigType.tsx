@@ -1,4 +1,4 @@
-import { Sort } from "@clickapp/qui-core";
+import { Sort } from "@greenstones/qui-core";
 import { createMscSortKey, getMscPropValue, MscObj } from "../MsgObj";
 import { formatTemplate } from "./utils";
 
@@ -93,7 +93,7 @@ export function formatText(template: Template, obj: MscObj) {
 export function formatLink(
   mscId: string,
   link: { type: string; id: Template },
-  obj: MscObj
+  obj: MscObj,
 ) {
   const idString = formatText(link.id, obj);
   return `/${mscId}/${link.type}/${idString}`;

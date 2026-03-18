@@ -1,4 +1,4 @@
-import { useFetch } from "@clickapp/qui-core";
+import { useFetch } from "@greenstones/qui-core";
 
 import Feature, { FeatureLike } from "ol/Feature";
 import { ViewOptions } from "ol/View";
@@ -110,7 +110,7 @@ function TooltipContent({ features }: { features?: FeatureLike[] }) {
       {Object.keys(groups).map((group) => {
         const features = groupBy(
           groups[group],
-          (f) => `${f.get("NAME")}` as string
+          (f) => `${f.get("NAME")}` as string,
         );
 
         return (
@@ -137,10 +137,13 @@ function TooltipContent({ features }: { features?: FeatureLike[] }) {
 }
 
 const groupBy = <T, K extends keyof any>(arr: T[], key: (i: T) => K) =>
-  arr.reduce((groups, item) => {
-    (groups[key(item)] ||= []).push(item);
-    return groups;
-  }, {} as Record<K, T[]>);
+  arr.reduce(
+    (groups, item) => {
+      (groups[key(item)] ||= []).push(item);
+      return groups;
+    },
+    {} as Record<K, T[]>,
+  );
 
 export function useFeaturePresenter(url: string, style: StyleLike) {
   const { data } = useFetch(url);

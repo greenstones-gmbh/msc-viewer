@@ -1,5 +1,5 @@
-import { QuickTable } from "@clickapp/qui-bootstrap";
-import { Column } from "@clickapp/qui-core";
+import { QuickTable } from "@greenstones/qui-bootstrap";
+import { Column } from "@greenstones/qui-core";
 import { MscObj, urlWithBasePath, useMscObjList } from "./MsgObj";
 
 export function EmbeddedTable({

@@ -1,6 +1,6 @@
 import { Auth0Provider, useAuth0 } from "@auth0/auth0-react";
-import { AuthContext, BaseAuthProps, useRoles } from "@clickapp/qui-core";
-import { useAsyncMemo } from "@clickapp/qui-core";
+import { AuthContext, BaseAuthProps, useRoles } from "@greenstones/qui-core";
+import { useAsyncMemo } from "@greenstones/qui-core";
 import { PropsWithChildren } from "react";
 
 export interface Auth0AuthProps extends BaseAuthProps {

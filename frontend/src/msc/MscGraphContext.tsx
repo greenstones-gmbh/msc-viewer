@@ -1,4 +1,4 @@
-import { fetchJson, useFetch } from "@clickapp/qui-core";
+import { fetchJson, useFetch } from "@greenstones/qui-core";
 import { createContext, PropsWithChildren, useContext } from "react";
 import { useParams } from "react-router-dom";
 
@@ -25,7 +25,7 @@ export function useGraphContext(): IGraphContext {
 export function GraphContextProvider({ children }: PropsWithChildren<{}>) {
   const { mscId } = useParams();
   const { data, isSuccess, reload, isPending } = useFetch<IGraphContext>(
-    `/msc-viewer/api/graph/msc/${mscId}`
+    `/msc-viewer/api/graph/msc/${mscId}`,
   );
 
   const reloadGraph = async () => {

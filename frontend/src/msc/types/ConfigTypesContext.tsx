@@ -1,4 +1,4 @@
-import { useFetch } from "@clickapp/qui-core";
+import { useFetch } from "@greenstones/qui-core";
 import { createContext, PropsWithChildren, useContext, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { ConfigType } from "./ConfigType";
@@ -11,7 +11,7 @@ export interface ConfigTypeValues {
 }
 
 export const ConfigTypesContext = createContext<ConfigTypeValues | undefined>(
-  undefined
+  undefined,
 );
 
 export function useConfigTypes(): ConfigType[] {
@@ -36,7 +36,7 @@ export function ConfigTypesContextProvider({
 }: PropsWithChildren<{}>) {
   const { mscId } = useParams();
   const { data, reload, isPending } = useFetch<ConfigType[]>(
-    `/msc-viewer/api/msc/${mscId}`
+    `/msc-viewer/api/msc/${mscId}`,
   );
 
   const c: ConfigTypeValues = {

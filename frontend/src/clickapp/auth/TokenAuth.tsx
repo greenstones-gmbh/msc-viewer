@@ -3,7 +3,7 @@ import {
   BaseAuthProps,
   fetchJson,
   useRoles,
-} from "@clickapp/qui-core";
+} from "@greenstones/qui-core";
 import { jwtDecode } from "jwt-decode";
 import { PropsWithChildren, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -55,7 +55,7 @@ export function TokenAuth({
   const loginWithPassword = async (
     username: string,
     password: string,
-    returnTo?: string
+    returnTo?: string,
   ) => {
     const data = await fetchJson(createTokenUri, {
       method: "POST",

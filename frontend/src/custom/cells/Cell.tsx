@@ -14,7 +14,7 @@ import {
   useMscObj,
 } from "../../msc/MsgObj";
 
-import { useDetaiModelBuilder } from "@clickapp/qui-core";
+import { useDetaiModelBuilder } from "@greenstones/qui-core";
 import { GraphView } from "../../clickapp-bootstrap/graph/GraphView";
 import { useGraphContext } from "../../msc/MscGraphContext";
 import { MscGraphStyles } from "../CustomGraphStyles";
@@ -38,9 +38,9 @@ function useDetailModel() {
             mscId,
             getMscPropValue(e, "LA", "LAC"),
             getMscPropValue(e, "MCC"),
-            getMscPropValue(e, "MNC")
+            getMscPropValue(e, "MNC"),
           ),
-      })
+      }),
     );
     b.addLine(multiValueProp("LA", "LAC"));
 
@@ -95,7 +95,7 @@ function graphTabs(
   id: string,
   extendedColumns: any,
   lteColumns: any,
-  gcaColumns: any
+  gcaColumns: any,
 ) {
   const mscLabel = encodeAsLabel(mscId);
   return [

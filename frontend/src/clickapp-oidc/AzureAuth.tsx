@@ -1,6 +1,6 @@
 import { PublicClientApplication } from "@azure/msal-browser";
 import { MsalProvider, useIsAuthenticated, useMsal } from "@azure/msal-react";
-import { AuthContext, BaseAuthProps, useRoles } from "@clickapp/qui-core";
+import { AuthContext, BaseAuthProps, useRoles } from "@greenstones/qui-core";
 import { PropsWithChildren, useMemo } from "react";
 
 // export const msalConfig = {
@@ -64,10 +64,10 @@ export function AzureAuth({
         },
         cache: {
           cacheLocation: "sessionStorage", // This configures where your cache will be stored
-          storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
+          //storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
         },
       }),
-    [authority, clientId]
+    [authority, clientId],
   );
 
   // console.log("2!!!!!!", msalInstance);
@@ -117,7 +117,7 @@ function MsalConnector({
     const path = returnTo ?? afterLogoutPath;
     const uri = path ? `${window.location.origin}${path}` : undefined;
     const params = uri ? { returnTo: uri } : undefined;
-    return await instance.logout(/*{ logoutParams: params }*/);
+    return await instance.logoutRedirect(/*{ logoutParams: params }*/);
   };
 
   console.log("accounts", accounts);

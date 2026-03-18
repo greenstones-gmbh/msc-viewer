@@ -5,7 +5,7 @@ import { MscContext } from "../../msc/MsgObj";
 import { BaseGraphView } from "./BaseGraphView";
 import { IGraph, IGraphStyles } from "./Graph";
 
-import { fetchJson, useFetch } from "@clickapp/qui-core";
+import { fetchJson, useFetch } from "@greenstones/qui-core";
 import { Spinner } from "react-bootstrap";
 
 const GRAPH_URL = "/msc-viewer/api/graph/query";
@@ -16,7 +16,7 @@ const fetchGraph = async (url: string, query: string): Promise<IGraph> => {
       "?" +
       new URLSearchParams({
         q: query,
-      })
+      }),
   );
 };
 
@@ -57,7 +57,7 @@ export function GraphView({
           expandFn={async (n) =>
             fetchGraph(
               GRAPH_URL,
-              `match p=(s where elementId(s)="${n.id}")-[]-(:${mscLabel}) return p`
+              `match p=(s where elementId(s)="${n.id}")-[]-(:${mscLabel}) return p`,
             )
           }
         />

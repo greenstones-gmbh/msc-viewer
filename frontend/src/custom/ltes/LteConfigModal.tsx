@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react";
 import { Button, Col, Form, Modal, Row } from "react-bootstrap";
 import { FormProvider, useForm } from "react-hook-form";
 
-import { InputField } from "@clickapp/qui-bootstrap";
+import { InputField } from "@greenstones/qui-bootstrap";
 import { getMscPropValue } from "../../msc/MsgObj";
 import { CellPickerField } from "../cells/CellPickerModal";
 

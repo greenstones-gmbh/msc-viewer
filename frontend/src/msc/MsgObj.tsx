@@ -32,7 +32,7 @@ import {
   useArray,
   useAsyncMemo,
   useColumnBuilder,
-} from "@clickapp/qui-core";
+} from "@greenstones/qui-core";
 import { DependencyList } from "react";
 import { MscResponse } from "./MscResponse";
 

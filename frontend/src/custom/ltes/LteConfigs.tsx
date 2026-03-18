@@ -1,6 +1,6 @@
 import { Outlet, useOutletContext } from "react-router-dom";
 
-import { OpenModalButton } from "@clickapp/qui-bootstrap";
+import { OpenModalButton } from "@greenstones/qui-bootstrap";
 import { MscListPage } from "../../msc/MscListPage";
 import {
   getMscPropValue,
@@ -18,7 +18,7 @@ export function createLteConfigLink(
   mscId: string,
   eci: string,
   emcc: string,
-  emnc: string
+  emnc: string,
 ) {
   return `/${mscId}/ltes/ECI=${eci},EMCC=${emcc},EMNC=${emnc}`;
 }
@@ -73,7 +73,7 @@ export function useLteColumns(plain = false) {
             mscId,
             getMscPropValue(e, "ECI"),
             getMscPropValue(e, "EMCC"),
-            getMscPropValue(e, "EMNC")
+            getMscPropValue(e, "EMNC"),
           );
 
     const linkToBts = plain

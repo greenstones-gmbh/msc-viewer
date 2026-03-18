@@ -4,7 +4,7 @@ import {
   AuthProvider,
   useAuth as useOidcContextAuth,
 } from "react-oidc-context";
-import { AuthContext, BaseAuthProps, useRoles } from "@clickapp/qui-core";
+import { AuthContext, BaseAuthProps, useRoles } from "@greenstones/qui-core";
 import { jwtDecode } from "jwt-decode";
 
 export interface OidcAuthProps extends BaseAuthProps {

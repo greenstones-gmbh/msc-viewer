@@ -1,4 +1,4 @@
-import { PickerField, PickerModal } from "@clickapp/qui-bootstrap";
+import { PickerField, PickerModal } from "@greenstones/qui-bootstrap";
 import { RegisterOptions } from "react-hook-form";
 import { getMscPropValue } from "../../msc/MsgObj";
 import { LteConfigModalFields } from "../ltes/LteConfigModal";
