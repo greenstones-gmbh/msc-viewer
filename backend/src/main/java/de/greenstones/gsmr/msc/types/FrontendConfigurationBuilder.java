@@ -103,6 +103,10 @@ public class FrontendConfigurationBuilder {
                         Prop prop = new Prop(p.getProp());
                         prop.label = p.getLabel();
                         prop.linkTo = createLink(p.getLink(), typeKey);
+                        if (p.externalLink != null) {
+                            prop.externalLink = p.externalLink.prop;
+                            prop.externalLinkLabel = p.externalLink.staticLabel;
+                        }
 
                         return prop;
                     }).collect(Collectors.toList());

@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import de.greenstones.gsmr.msc.core.Command.CommandResult;
 import de.greenstones.gsmr.msc.core.Command.Params;
 import de.greenstones.gsmr.msc.core.MscService.Shell;
-import de.greenstones.gsmr.msc.gis.CsvFeatureProvider;
+import de.greenstones.gsmr.msc.data.DataProvider;
 import de.greenstones.gsmr.msc.gis.FeatureProvider;
 import de.greenstones.gsmr.msc.model.Obj;
 import de.greenstones.gsmr.msc.types.ConfigType;
@@ -26,6 +26,7 @@ public class MscInstance {
 	Map<String, ConfigType> types;
 	MscService mscService;
 	Map<String, FeatureProvider> featureProviders;
+	Map<String, DataProvider> dataProviders;
 
 	public <R> R execute(Job<R> job) {
 		return mscService.executeJob(shell -> {

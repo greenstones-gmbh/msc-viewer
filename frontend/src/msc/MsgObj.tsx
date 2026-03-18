@@ -41,6 +41,7 @@ const ROOT_BASE_PATH = `/msc-viewer`;
 
 export interface MscObj {
   sections: MscSection[];
+  extra?: Record<string, any>;
 }
 
 export interface MscSection {
@@ -81,6 +82,10 @@ export function hasName(prop: MscProp, name: string) {
   return false;
 }
 export function getMscPropValue(v: MscObj, name: string, hint?: string) {
+  if (name.startsWith("EXTRA_")) {
+    return v.extra?.[name];
+  }
+
   const prop = v.sections
     .filter((s) => !!s.props)
     .flatMap((s) => s.props)
@@ -142,7 +147,7 @@ export function urlWithBasePath(url: string) {
 
 export function useMscObjList(
   url: string,
-  ops?: ArraySourceOptions<MscObj, string> & ListOptions<string>
+  ops?: ArraySourceOptions<MscObj, string> & ListOptions<string>,
 ): MscObjListResult {
   const { data, error, isError, isSuccess, isPending, reload } = useAsyncMemo<
     MscResponse<MscObj[]>
@@ -151,7 +156,7 @@ export function useMscObjList(
       const u = params && params.force ? `${url}?force=true` : url;
       return await fetchJson<MscResponse<MscObj[]>>(u);
     },
-    [url]
+    [url],
   );
 
   const { data: items, ...cmd } = data || {};
@@ -183,23 +188,24 @@ export function useMscObj(url: string) {
       const u = params && params.force ? `${url}?force=true` : url;
       return await fetchJson<MscResponse<MscObj>>(u);
     },
-    [url]
+    [url],
   );
   return { ...props, reload: () => reload({ force: true }) };
 }
 
 export function prop<PropType = string>(
   name: string,
-  options: FieldRenderOptions<MscObj, PropType> = {}
+  options: FieldRenderOptions<MscObj, PropType> = {},
 ): MscField {
   const parts = name.split("|");
   const o = {
     label:
       options.label || parts.length === 2 ? parts[0] + " " + parts[1] : name,
-    getter: (v: MscObj) =>
-      parts.length === 2
+    getter: (v: MscObj) => {
+      return parts.length === 2
         ? getMscPropValue(v, parts[0], parts[1])
-        : getMscPropValue(v, name),
+        : getMscPropValue(v, name);
+    },
     ...options,
   };
 
@@ -218,7 +224,7 @@ export interface MscField extends Field<MscObj> {
 export function multiValueProp<PropType = string>(
   name: string,
   hint: string,
-  options: FieldRenderOptions<MscObj, PropType> = {}
+  options: FieldRenderOptions<MscObj, PropType> = {},
 ): MscField {
   const o = {
     label: !hint ? name : `${name} ${hint}`,
@@ -230,7 +236,7 @@ export function multiValueProp<PropType = string>(
 
 export function valueColumn<PropType = string>(
   name: string,
-  options: ColumnOptions<MscObj> & FieldRenderOptions<MscObj, PropType> = {}
+  options: ColumnOptions<MscObj> & FieldRenderOptions<MscObj, PropType> = {},
 ): Column<MscObj> {
   const field = prop(name, options);
   return column(field, options);
@@ -238,7 +244,7 @@ export function valueColumn<PropType = string>(
 
 export function column(
   field: MscField,
-  options: ColumnOptions<MscObj> = {}
+  options: ColumnOptions<MscObj> = {},
 ): Column<MscObj> {
   return createColumn(field, {
     sortKey: createMscSortKey(field.name, field.hint),
@@ -250,7 +256,7 @@ export function column(
 export function multiValueColumn<PropType = string>(
   name: string,
   hint: string,
-  options: ColumnOptions<MscObj> & FieldRenderOptions<MscObj, PropType> = {}
+  options: ColumnOptions<MscObj> & FieldRenderOptions<MscObj, PropType> = {},
 ): Column<MscObj> {
   const field = multiValueProp(name, hint, options);
   return createColumn(field, {
@@ -291,7 +297,7 @@ export function useMscInstance() {
 
 export function useMscObjColumnBuilder(
   configurer: (builder: MscObjectColumnBuilder) => void,
-  deps?: DependencyList
+  deps?: DependencyList,
 ) {
   return useColumnBuilder<MscObj>((builder) => {
     const b = new MscObjectColumnBuilder(builder);
@@ -308,7 +314,7 @@ export class MscObjectColumnBuilder {
 
   value(
     prop: string,
-    options: ColumnOptions<MscObj> & FieldRenderOptions<MscObj, any> = {}
+    options: ColumnOptions<MscObj> & FieldRenderOptions<MscObj, any> = {},
   ) {
     this.builder.add(valueColumn(prop, options));
     return this;
@@ -317,7 +323,7 @@ export class MscObjectColumnBuilder {
   multiValue(
     name: string,
     hint: string,
-    options: ColumnOptions<MscObj> & FieldRenderOptions<MscObj, any> = {}
+    options: ColumnOptions<MscObj> & FieldRenderOptions<MscObj, any> = {},
   ) {
     this.builder.add(multiValueColumn(name, hint, options));
     return this;

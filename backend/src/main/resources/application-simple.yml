@@ -8,3 +8,9 @@ msc-viewer:
       schema: simple
       simulate:
         dataset: simple
+      dataProviders:
+        cells:
+          path: classpath:/data/cells.txt
+          key: ID
+        cells1:
+          bean: fakeDataProvider

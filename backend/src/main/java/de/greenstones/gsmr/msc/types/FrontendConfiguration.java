@@ -57,6 +57,7 @@ public class FrontendConfiguration {
     static class LinkTo {
         String type;
         Template id;
+
     }
 
     @Getter
@@ -65,6 +66,8 @@ public class FrontendConfiguration {
         String prop;
         String label;
         LinkTo linkTo;
+        String externalLink;
+        String externalLinkLabel;
 
         Prop(String prop) {
             this.prop = prop;

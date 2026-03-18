@@ -66,11 +66,6 @@
 			<version>25.1</version>
 		</dependency> -->
 
-		<dependency>
-			<groupId>org.geotools</groupId>
-			<artifactId>gt-api</artifactId>
-			<version>32.2</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.geotools</groupId>

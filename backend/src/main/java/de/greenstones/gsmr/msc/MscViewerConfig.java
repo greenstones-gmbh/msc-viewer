@@ -21,6 +21,8 @@ import de.greenstones.gsmr.msc.core.CommandCache;
 import de.greenstones.gsmr.msc.core.MscInstance;
 import de.greenstones.gsmr.msc.core.MscResolver;
 import de.greenstones.gsmr.msc.core.MscService;
+import de.greenstones.gsmr.msc.data.CsvDataProvider;
+import de.greenstones.gsmr.msc.data.DataProvider;
 import de.greenstones.gsmr.msc.gis.CsvFeatureProvider;
 import de.greenstones.gsmr.msc.gis.FeatureProvider;
 import de.greenstones.gsmr.msc.types.ConfigType;
@@ -50,6 +52,9 @@ public class MscViewerConfig {
 
 	@Autowired
 	Map<String, ConfigType> simpleConfigTypes;
+
+	@Autowired
+	Map<String, DataProvider> availableDataProviders;
 
 	@Bean
 	public MscResolver mscResolver() {
@@ -92,7 +97,20 @@ public class MscViewerConfig {
 						featureProviders = testData.getFeatureProviders();
 					}
 
-					MscInstance r = new MscInstance(configTypes, s, featureProviders);
+					var dataProviders = new HashMap<String, DataProvider>();
+					msc.dataProviders.forEach((k, conf) -> {
+						if (conf.bean != null) {
+							if (availableDataProviders.containsKey(conf.bean)) {
+								dataProviders.put(k, availableDataProviders.get(k));
+							}
+						} else {
+							CsvDataProvider p = new CsvDataProvider(conf.path, conf.key);
+							dataProviders.put(k, p);
+						}
+
+					});
+
+					MscInstance r = new MscInstance(configTypes, s, featureProviders, dataProviders);
 
 					log.info("MSC Instance {} created",
 							msc.id);

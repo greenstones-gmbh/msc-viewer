@@ -1,7 +1,9 @@
 package de.greenstones.gsmr.msc.model;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -12,21 +14,27 @@ import de.greenstones.gsmr.msc.model.Props.ValueProp;
 import de.greenstones.gsmr.msc.model.Sections.PropSection;
 import de.greenstones.gsmr.msc.model.Sections.Section;
 import de.greenstones.gsmr.msc.model.Sections.TableSection;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 
 /**
  * Represents a single MSC configuration/object with a set of sections.
  */
-@AllArgsConstructor
 @NoArgsConstructor
 @ToString
 @Getter
 public class Obj {
 
 	protected List<Section> sections = new ArrayList<>();
+
+	@Setter
+	protected Map<String, Object> extra = new HashMap<>();
+
+	public Obj(List<Section> sections) {
+		this.sections = sections;
+	}
 
 	public Optional<Prop> getProp(String name) {
 		return sections.stream().filter(s -> s instanceof PropSection).map(s -> (PropSection) s)
@@ -47,6 +55,14 @@ public class Obj {
 	}
 
 	public String getValue(String name) {
+		// if (name.startsWith("EXTRA_")) {
+		// if (extra != null) {
+		// Object o = extra.get(name);
+		// return o != null ? o.toString() : null;
+		// }
+		// return null;
+		// }
+
 		return getProp(name).filter(p -> p instanceof ValueProp).map(p -> (ValueProp) p).map(p -> p.getValue())
 				.orElseThrow(() -> new ApplicationException(
 						"ValueProp " + name + " not exists."));

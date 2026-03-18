@@ -9,6 +9,7 @@ import de.greenstones.gsmr.msc.core.ParamMapping;
 import de.greenstones.gsmr.msc.core.Command.CommandResult;
 import de.greenstones.gsmr.msc.core.MscInstance.ListAndDetails;
 import de.greenstones.gsmr.msc.core.MscInstance.MscRepository;
+import de.greenstones.gsmr.msc.data.DataProvider;
 import de.greenstones.gsmr.msc.model.Obj;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -26,6 +27,7 @@ public class NodeConfigurer {
     ParamMapping propsMapping;
     boolean useDetails = false;
     List<RelationType> relations = new ArrayList<RelationType>();
+    String extraPropsMapping;
 
     /**
      * Constructs a GraphNodeType with the specified label and property mapping.
@@ -46,6 +48,11 @@ public class NodeConfigurer {
 
     public NodeConfigurer propMapping(String propsMapping) {
         this.propsMapping = ParamMapping.from(propsMapping);
+        return this;
+    }
+
+    public NodeConfigurer extraPropsMapping(String extraPropsMapping) {
+        this.extraPropsMapping = extraPropsMapping;
         return this;
     }
 

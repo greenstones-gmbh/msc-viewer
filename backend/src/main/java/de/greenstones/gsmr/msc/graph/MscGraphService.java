@@ -35,15 +35,17 @@ import de.greenstones.gsmr.msc.core.MscInstance;
 import de.greenstones.gsmr.msc.core.MscInstance.Job;
 import de.greenstones.gsmr.msc.core.MscInstance.MscRepository;
 import de.greenstones.gsmr.msc.core.MscResolver;
+import de.greenstones.gsmr.msc.data.DataProvider;
+import de.greenstones.gsmr.msc.data.Utils;
 import de.greenstones.gsmr.msc.graph.MscGraphService.Graph.Node;
 import de.greenstones.gsmr.msc.graph.MscGraphService.Graph.Relation;
 import de.greenstones.gsmr.msc.model.Obj;
 import de.greenstones.gsmr.msc.types.ConfigType;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.SneakyThrows;
-import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 
 @Component
@@ -65,6 +67,66 @@ public class MscGraphService {
 
 	@org.springframework.beans.factory.annotation.Value("${msc-viewer.graph.forceReloadOnStartup:false}")
 	boolean forceReloadOnStartup = false;
+
+	public GraphInfo getInfo(String mscId) {
+		try {
+			List<Record> query = graphService.query("MATCH (p:MscGraph WHERE p.mscId = '" + mscId + "' ) return p");
+			if (query.size() == 1) {
+				var status = query.get(0).get("p").get("status").asString();
+				return GraphInfo.builder().graphDatabaseAvailable(true).graphAvailable(true)
+						.date(query.get(0).get("p").get("date").asString()).status(status).build();
+			}
+			return GraphInfo.builder().graphDatabaseAvailable(true).graphAvailable(false).build();
+		} catch (Exception e) {
+			log.error("can't get graph for " + mscId, e);
+		}
+		return GraphInfo.builder().build();
+	}
+
+	@Getter
+	@Builder
+	public static class GraphInfo {
+		boolean graphAvailable;
+		boolean graphDatabaseAvailable;
+		String date;
+		String status;
+
+	}
+
+	public void enrichWithExtra(String mscId, String type, String id, Obj data) {
+		if (!getInfo(mscId).isGraphAvailable())
+			return;
+		Map<String, Object> node = getNode(mscId, type, id);
+		if (node != null) {
+			var extra = getExtra(node);
+			data.setExtra(extra);
+		}
+	}
+
+	public void enrichWithExtra(String mscId, String type, List<Obj> items) {
+		if (!getInfo(mscId).isGraphAvailable())
+			return;
+		List<Map<String, Object>> nodes = getNodes(mscId, type);
+		MscInstance msc = mscResolver.find(mscId);
+		ConfigType configType = msc.getTypes().get(type);
+
+		var nodeMap = nodes.stream().collect(Collectors.toMap(n -> n.get("id"), n -> n));
+		if (items != null) {
+			items.forEach(o -> {
+				String id = configType.getId(o);
+				Map<String, Object> node = nodeMap.get(id);
+				if (node != null) {
+					o.setExtra(getExtra(node));
+				}
+			});
+		}
+	}
+
+	private Map<String, Object> getExtra(Map<String, Object> node) {
+		var extra = node.entrySet().stream().filter(e -> e.getKey().startsWith("EXTRA_"))
+				.collect(Collectors.toMap(e -> e.getKey(), e -> e.getValue()));
+		return extra;
+	}
 
 	public List<Map<String, Object>> getNodes(String mscId, String sourceType) {
 		MscInstance msc = mscResolver.find(mscId);
@@ -265,7 +327,7 @@ public class MscGraphService {
 	private void createNodes(String mscId, Map<String, ConfigType> types, Map<String, List<Obj>> data,
 			Session session) {
 		long start = System.currentTimeMillis();
-		Graph graph = createGraph(types, data);
+		Graph graph = createGraph(mscId, types, data);
 		log.info("createGraph {} in {} msc, nodes: {}, rels:{} ", mscId, System.currentTimeMillis() - start,
 				graph.getNodes().size(), graph.getRelations().size());
 
@@ -302,17 +364,23 @@ public class MscGraphService {
 		return entity + ":`" + mscId + "`";
 	}
 
-	public Graph createGraph(Map<String, ConfigType> types, Map<String, List<Obj>> data) {
+	public Graph createGraph(String mscId, Map<String, ConfigType> types, Map<String, List<Obj>> data) {
 
 		List<Node> nodes = new ArrayList<Node>();
 		List<Relation> relations = new ArrayList<Relation>();
 
-		data.keySet().stream().forEach(k -> {
-			ConfigType configType = types.get(k);
-			List<Obj> list = data.get(k);
+		MscInstance mscInstance = mscResolver.find(mscId);
+
+		data.keySet().stream().forEach(typeName -> {
+			ConfigType configType = types.get(typeName);
+			DataProvider dataProvider = mscInstance.getDataProviders().get(typeName);
+			if (dataProvider != null) {
+				dataProvider.init();
+			}
+			List<Obj> list = data.get(typeName);
 			if (configType.getNode() != null && list != null) {
 				String label = configType.getNode().getLabel();
-				log.debug("createGraph node {} label: {}", k, label);
+				log.debug("createGraph node {} label: {}", typeName, label);
 				// nodes
 				list.stream().forEach(o -> {
 					Map<String, String> map = configType.getNode().getPropsMapping().map(o);
@@ -321,6 +389,24 @@ public class MscGraphService {
 					map1.put("id", id);
 					map1.put("fulltext", label + "_" + map.values().stream().collect(Collectors.joining("_")));
 					map1.put("json", toJson(o));
+
+					if (dataProvider != null) {
+						Map<String, String> extras = dataProvider.find(id);
+
+						if (extras != null) {
+							if (configType.getNode().getExtraPropsMapping() != null) {
+								Map<String, String> d = Utils.map(configType.getNode().getExtraPropsMapping(),
+										extras);
+								map1.putAll(d);
+							} else {
+
+								extras.forEach((k, v) -> {
+									map1.put("EXTRA_" + k, v);
+								});
+							}
+
+						}
+					}
 
 					nodes.add(new Node(label, map1));
 
@@ -354,6 +440,9 @@ public class MscGraphService {
 
 			}
 
+			if (dataProvider != null) {
+				dataProvider.clear();
+			}
 		});
 
 		return new Graph(nodes, relations);

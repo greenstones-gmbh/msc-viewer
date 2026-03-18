@@ -17,6 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 import de.greenstones.gsmr.msc.ApplicationException;
 import de.greenstones.gsmr.msc.MscViewerProperties;
 import de.greenstones.gsmr.msc.MscViewerProperties.Msc;
+import de.greenstones.gsmr.msc.core.Command.CommandResult;
+import de.greenstones.gsmr.msc.graph.MscGraphService;
+import de.greenstones.gsmr.msc.model.Obj;
 import de.greenstones.gsmr.msc.types.ConfigType;
 import de.greenstones.gsmr.msc.types.FrontendConfigurationBuilder;
 import lombok.extern.slf4j.Slf4j;
@@ -32,6 +35,9 @@ public class MscController {
 
 	@Autowired
 	MscViewerProperties props;
+
+	@Autowired
+	MscGraphService mscGraphService;
 
 	@GetMapping()
 	public List<Msc> instances() {
@@ -51,14 +57,23 @@ public class MscController {
 
 		log.debug("list {} {}", mscId, type);
 
-		return mscs.find(mscId).execute(repository -> repository.findAll(type, force));
+		MscInstance mscInstance = mscs.find(mscId);
+		CommandResult<List<Obj>> result = mscInstance.execute(repository -> repository.findAll(type, force));
+		if (result.data != null) {
+			mscGraphService.enrichWithExtra(mscId, type, result.data);
+		}
+		return result;
 	}
 
 	@GetMapping("/{mscId}/{type}/{id}")
 	public Object detail(@PathVariable String mscId, @PathVariable String type, @PathVariable String id,
 			@RequestParam(required = false, defaultValue = "false") boolean force) {
 		log.debug("details {} {} {}", mscId, type, id);
-		return mscs.find(mscId).execute(repository -> repository.findOne(type, id, force));
+		CommandResult<Obj> result = mscs.find(mscId).execute(repository -> repository.findOne(type, id, force));
+		if (result.data != null) {
+			mscGraphService.enrichWithExtra(mscId, type, id, result.data);
+		}
+		return result;
 
 	}
 

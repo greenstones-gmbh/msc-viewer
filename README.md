@@ -18,6 +18,7 @@ The tool helps visualize configurations on a map to provide location context. Pr
 ## Features
 
 * Visualization of configuration hierarchy and relationships.
+* Enrich MSC data with information from external systems, such as labels, names, and coordinates.
 * Quick browsing and detail view of configurations.
 * Export to CSV/Excel.
 * Customizable for specific requirements, such as GSM-R.
@@ -60,7 +61,7 @@ cd backend
 # run the frontend subproject
 cd frontend
 npm install
-npm start
+npm run dev
 
 # open the web app
 open http://localhost:3000/msc-viewer

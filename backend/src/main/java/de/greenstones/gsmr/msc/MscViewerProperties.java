@@ -1,5 +1,6 @@
 package de.greenstones.gsmr.msc;
 
+import java.nio.file.Path;
 import java.util.List;
 import java.util.Map;
 
@@ -8,7 +9,6 @@ import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import de.greenstones.gsmr.msc.gis.CsvFeatureProvider;
 import lombok.Data;
 
 @Component
@@ -43,6 +43,9 @@ public class MscViewerProperties {
 		@JsonIgnore
 		Map<String, FeatureProviderConfig> gis;
 
+		@JsonIgnore
+		Map<String, DataProviderConfig> dataProviders;
+
 	}
 
 	@Data
@@ -63,6 +66,13 @@ public class MscViewerProperties {
 		String key;
 		String x;
 		String y;
+	}
+
+	@Data
+	public static class DataProviderConfig {
+		String bean;
+		Path path;
+		String key;
 	}
 
 }

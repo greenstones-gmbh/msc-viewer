@@ -65,6 +65,7 @@ public class SimpleSchema {
 						.typeLabel("BTS")
 						.propMapping(
 								"NAME=BTS|NAME,NUMBER=BTS|NUMBER,LAC=LA|LAC,LA_NAME=LA|NAME,BSC=BSC|NAME,CI,MCC,MNC")
+						.extraPropsMapping("EXTRA_NAME=NAME,EXTRA_LINK=LINK")
 						.color("blue")//
 						.nameTemplate("${NUMBER}")
 						.relation("lacs", "BELONGS_TO", "LAC=LA|LAC,MCC,MNC")) //
@@ -72,7 +73,8 @@ public class SimpleSchema {
 				.frontend(f -> f //
 						.title("Cells and BTSs") // list page title
 						.column("BTS|NUMBER") // table columns
-						.column("BTS|NAME", col -> col.noWidth().linkToDetail()) //
+						.column("EXTRA_NAME", col -> col.noWidth().header("Name").linkToDetail()) //
+						.column("BTS|NAME", col -> col.noWidth()) //
 						.column("BSC|NUMBER") //
 						.column("BSC|NAME") //
 						.column("LA|LAC") //
@@ -81,7 +83,10 @@ public class SimpleSchema {
 						.column("BTS ADMINISTRATIVE STATE", col -> col.header("STATE"))
 
 						.detail(d -> d //
-								.title("${NAME}", "NAME=BTS|NAME") // detail page title template
+								.title("${NAME} | ${EXTRA_NAME}", "NAME=BTS|NAME,EXTRA_NAME") // detail page title
+																								// template
+								.prop("EXTRA_NAME", p -> p.label("Name").externalLink("EXTRA_LINK", null)) //
+								.propSeparator()
 								.props("BTS|NAME", "BTS|NUMBER")// properties to display
 								.propSeparator()//
 								.prop("LA|LAC")//

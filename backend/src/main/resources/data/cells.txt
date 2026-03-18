@@ -1,0 +1,8 @@
+ID,NAME,LINK
+10000,Cell A,https://areamanager.sbb.ch/app/cells/10000
+10001,Cell B,https://areamanager.sbb.ch/app/cells/10000
+10002,Cell C,https://areamanager.sbb.ch/app/cells/10000
+10003,Cell D,https://areamanager.sbb.ch/app/cells/10000
+10004,Cell E,https://areamanager.sbb.ch/app/cells/10000
+10005,Cell F,https://areamanager.sbb.ch/app/cells/10000
+

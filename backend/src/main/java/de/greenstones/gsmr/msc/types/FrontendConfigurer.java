@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import de.greenstones.gsmr.msc.types.FrontendConfigurer.Link;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -111,11 +112,21 @@ public class FrontendConfigurer {
 
     @Getter
     @Setter
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class ExternalLink {
+        String prop;
+        String staticLabel;
+
+    }
+
+    @Getter
+    @Setter
     public static class Prop {
         String prop;
         String label;
         Link link;
-
+        ExternalLink externalLink;
     }
 
     @AllArgsConstructor
@@ -160,6 +171,11 @@ public class FrontendConfigurer {
 
         public PropConfigurer linkTo(String type, String mapping) {
             prop.link = new Link(type, mapping);
+            return this;
+        }
+
+        public PropConfigurer externalLink(String p, String staticLabel) {
+            prop.externalLink = new ExternalLink(p, staticLabel);
             return this;
         }
 
