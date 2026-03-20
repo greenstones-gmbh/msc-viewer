@@ -15,6 +15,7 @@ export type Prop =
       prop: string;
       label?: string;
       linkTo?: { type: string; id: Template };
+      externalLinkTo?: { title: string; href: Template };
     };
 
 export type ColumnProp =
@@ -71,8 +72,20 @@ export function createSort(prop?: string): Sort | undefined {
   return { id: createMscSortKey(prop), direction: "asc" };
 }
 
-export function formatText(template: Template, obj: MscObj) {
+export function formatText(
+  template: Template,
+  obj: MscObj,
+  ops?: { placehoder?: string; undefinedOnEmptyParams?: boolean },
+) {
   const params = mapObj(obj, template.mapping);
+
+  if (ops?.undefinedOnEmptyParams) {
+    for (const [key, v] of Object.entries(params)) {
+      if (v == undefined || v === "") {
+        return undefined;
+      }
+    }
+  }
 
   if (template.paddings) {
     Object.keys(template.paddings).forEach((k) => {
@@ -85,6 +98,14 @@ export function formatText(template: Template, obj: MscObj) {
       .forEach((k) => {
         params[k] = template.valueMapping![params[k]];
       });
+  }
+
+  if (ops?.placehoder && params) {
+    for (const [key, v] of Object.entries(params)) {
+      if (v == undefined || v === "") {
+        params[key] = ops.placehoder;
+      }
+    }
   }
 
   return formatTemplate(template.template, params);

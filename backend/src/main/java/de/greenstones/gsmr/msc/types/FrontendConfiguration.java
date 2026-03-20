@@ -62,12 +62,18 @@ public class FrontendConfiguration {
 
     @Getter
     @Setter
+    static class ExternalLinkTo {
+        String title;
+        Template href;
+    }
+
+    @Getter
+    @Setter
     static class Prop {
         String prop;
         String label;
         LinkTo linkTo;
-        String externalLink;
-        String externalLinkLabel;
+        ExternalLinkTo externalLinkTo;
 
         Prop(String prop) {
             this.prop = prop;

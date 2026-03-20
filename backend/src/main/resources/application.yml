@@ -22,7 +22,7 @@ msc-viewer:
       port: 22
       user: user1
       password: pwd1
-      schema: gsmr
+      schema: gsmrConfigTypes
       badges:
         - label: DEVELOPMENT
           style: secondary
@@ -36,7 +36,7 @@ msc-viewer:
       port: 22
       user: user2
       password: pwd2
-      schema: simple
+      schema: simpleConfigTypes
       badges:
         - label: DEVELOPMENT
         - label: Simple
@@ -49,7 +49,7 @@ msc-viewer:
       port: 22
       user: user3
       password: pwd3
-      schema: gsmr
+      schema: gsmrConfigTypes
       badges:
         - label: PRODUCTION
           style: primary

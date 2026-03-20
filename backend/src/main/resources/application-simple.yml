@@ -5,7 +5,7 @@ msc-viewer:
       port: 22
       user: user1
       password: pwd1
-      schema: simple
+      schema: simpleConfigTypes
       simulate:
         dataset: simple
       dataProviders:

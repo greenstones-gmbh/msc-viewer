@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 
 import de.greenstones.gsmr.msc.types.FrontendConfiguration.Column;
 import de.greenstones.gsmr.msc.types.FrontendConfiguration.DetailConfig;
+import de.greenstones.gsmr.msc.types.FrontendConfiguration.ExternalLinkTo;
 import de.greenstones.gsmr.msc.types.FrontendConfiguration.LinkTo;
 import de.greenstones.gsmr.msc.types.FrontendConfiguration.ListConfig;
 import de.greenstones.gsmr.msc.types.FrontendConfiguration.MapConfig;
@@ -104,8 +105,10 @@ public class FrontendConfigurationBuilder {
                         prop.label = p.getLabel();
                         prop.linkTo = createLink(p.getLink(), typeKey);
                         if (p.externalLink != null) {
-                            prop.externalLink = p.externalLink.prop;
-                            prop.externalLinkLabel = p.externalLink.staticLabel;
+                            prop.externalLinkTo = new ExternalLinkTo();
+                            prop.externalLinkTo.setHref(
+                                    new Template(p.externalLink.hrefTemplate, p.externalLink.hrefMapping, null, null));
+                            prop.externalLinkTo.setTitle(p.externalLink.title);
                         }
 
                         return prop;

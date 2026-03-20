@@ -48,10 +48,7 @@ public class MscViewerConfig {
 	Path cachePath;
 
 	@Autowired
-	Map<String, ConfigType> gsmrConfigTypes;
-
-	@Autowired
-	Map<String, ConfigType> simpleConfigTypes;
+	Map<String, Map<String, ConfigType>> schemas;
 
 	@Autowired
 	Map<String, DataProvider> availableDataProviders;
@@ -81,8 +78,8 @@ public class MscViewerConfig {
 						cache.clear();
 					}
 
-					Map<String, ConfigType> configTypes = "simple".equals(msc.getSchema()) ? simpleConfigTypes
-							: gsmrConfigTypes;
+					log.info("Schema {} {}", msc.id, msc.schema);
+					Map<String, ConfigType> configTypes = getSchema(msc.getSchema());
 
 					var featureProviders = msc.getGis() != null ? msc.getGis().entrySet().stream()
 							.collect(Collectors.toMap(e -> e.getKey(), e -> {
@@ -102,7 +99,8 @@ public class MscViewerConfig {
 						msc.dataProviders.forEach((k, conf) -> {
 							if (conf.bean != null) {
 								if (availableDataProviders.containsKey(conf.bean)) {
-									dataProviders.put(k, availableDataProviders.get(k));
+									dataProviders.put(k, availableDataProviders.get(conf.bean));
+									log.info("add bean dataProvider {} {}", k, availableDataProviders.get(k));
 								}
 							} else {
 								CsvDataProvider p = new CsvDataProvider(conf.path, conf.key);
@@ -122,6 +120,14 @@ public class MscViewerConfig {
 
 		MscResolver mscs = new MscResolver(instances);
 		return mscs;
+	}
+
+	Map<String, ConfigType> getSchema(String name) {
+		String n = name != null ? name : "simpleConfigTypes";
+		Map<String, ConfigType> types = schemas.get(n);
+		if (types == null)
+			throw new RuntimeException("Schema " + name + " not defined. Available: " + schemas.keySet());
+		return types;
 	}
 
 }

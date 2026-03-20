@@ -20,6 +20,7 @@ import { formatLink, formatText, Prop, TableTab } from "./ConfigType";
 import { useGraphStyles } from "./ConfigTypesGraph";
 import { RelationTable } from "./RelationTable";
 import { formatTemplate } from "./utils";
+import { BsFieldRenderers } from "@greenstones/qui-bootstrap";
 
 export function ConfigTypeDetailPage({
   type,
@@ -77,12 +78,7 @@ export function ConfigTypeDetailPage({
       parentLabel={parentLabel}
       parentPath={parentPath}
       defaultTab={defaultTab}
-      title={(v) => (v ? formatText(title, v) : "")}
-      // headerAddon={(v) => (
-      //   <Badge bg="warning">
-      //     <MscPropValue obj={v} name="BTS ADMINISTRATIVE STATE" />
-      //   </Badge>
-      // )}
+      title={(v) => (v ? formatText(title, v, { placehoder: "-" }) : "")}
       tabs={(v) =>
         graphAvailable
           ? [
@@ -126,6 +122,15 @@ export function useDetailModel(type: string, props?: Prop[][]) {
               prop(p.prop, {
                 linkTo: p.linkTo
                   ? (entity) => formatLink(mscId, p.linkTo!, entity)
+                  : undefined,
+                renderField: p.externalLinkTo
+                  ? BsFieldRenderers.asExternalLink({
+                      href: (entity) =>
+                        formatText(p.externalLinkTo!.href, entity, {
+                          undefinedOnEmptyParams: true,
+                        }),
+                      title: p.externalLinkTo!.title,
+                    })
                   : undefined,
                 ...(p.label ? { label: p.label } : {}),
               }),

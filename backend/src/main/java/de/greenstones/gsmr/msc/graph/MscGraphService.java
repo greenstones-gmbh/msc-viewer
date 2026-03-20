@@ -201,8 +201,14 @@ public class MscGraphService {
 		String q = "match " + nodes.stream().collect(Collectors.joining("-[]-")) + " return target";
 
 		List<Record> query = graphService.query(q);
-		List<Obj> list = query.stream().map(p -> p.get("target").get("json").asString()).map(p -> fromJson(p))
-				.collect(Collectors.toList());
+		List<Obj> list = query.stream().map(p -> p.get("target")).map(o1 -> {
+			var p = o1.get("json").asString();
+			Obj obj = fromJson(p);
+			if (obj != null) {
+				obj.setExtra(getExtra(o1.asMap()));
+			}
+			return obj;
+		}).collect(Collectors.toList());
 
 		return list;
 
@@ -297,7 +303,7 @@ public class MscGraphService {
 			if (configType.getNode() != null && list != null) {
 				String label = configType.getNode().getLabel();
 				String q = "CREATE INDEX " + label + "_id_index IF NOT EXISTS FOR (p:" + label + ") ON (p.id) ";
-				log.info("createIndex node {} label: {}", k, q);
+				// log.info("createIndex node {} label: {}", k, q);
 				tx.run(q);
 			}
 
@@ -373,6 +379,7 @@ public class MscGraphService {
 
 		data.keySet().stream().forEach(typeName -> {
 			ConfigType configType = types.get(typeName);
+
 			DataProvider dataProvider = mscInstance.getDataProviders().get(typeName);
 			if (dataProvider != null) {
 				dataProvider.init();
@@ -534,7 +541,10 @@ public class MscGraphService {
 	public static Value toValues(Map<String, String> v) {
 		Map<String, Value> map = new HashMap<String, Value>();
 		v.keySet().forEach(key -> {
-			map.put(key, Values.value(v.get(key)));
+
+			String val = v.get(key);
+			map.put(key, Values.value(val != null ? val : ""));
+
 		});
 
 		return Values.value(map);

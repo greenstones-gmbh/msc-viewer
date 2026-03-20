@@ -115,8 +115,10 @@ public class FrontendConfigurer {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class ExternalLink {
-        String prop;
-        String staticLabel;
+
+        String hrefTemplate;
+        String hrefMapping;
+        String title;
 
     }
 
@@ -174,8 +176,8 @@ public class FrontendConfigurer {
             return this;
         }
 
-        public PropConfigurer externalLink(String p, String staticLabel) {
-            prop.externalLink = new ExternalLink(p, staticLabel);
+        public PropConfigurer externalLink(String template, String mapping, String title) {
+            prop.externalLink = new ExternalLink(template, mapping, title);
             return this;
         }
 
