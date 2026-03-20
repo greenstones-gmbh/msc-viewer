@@ -15,6 +15,12 @@ msc-viewer:
   graph:
     updateOnStartup: true
     forceReloadOnStartup: false
+    graphUpdate:
+      cron: "0 0 5 * * *"
+      enabled: false
+    fullUpdate:
+      cron: "0 0 4 * * MON"
+      enabled: false
 
   instances:
     - id: MSS-DEV-01
@@ -72,3 +78,7 @@ msc-viewer:
 logging:
   level:
     org.geotools.feature: ERROR
+
+areamanager:
+  dataProvider: http://localhost:7777/sbbam-core/rest/msc-viewer
+  url: http://localhost:7777

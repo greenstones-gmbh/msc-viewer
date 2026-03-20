@@ -85,7 +85,7 @@ public class SimpleSchema {
 						.detail(d -> d //
 								.title("${NAME} | ${EXTRA_NAME}", "NAME=BTS|NAME,EXTRA_NAME") // detail page title
 																								// template
-								.prop("EXTRA_NAME", p -> p.label("Name").externalLink("EXTRA_LINK", null)) //
+								.prop("EXTRA_NAME", p -> p.label("Name")) //
 								.propSeparator()
 								.props("BTS|NAME", "BTS|NUMBER")// properties to display
 								.propSeparator()//

@@ -11,7 +11,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Spliterator;
 import java.util.Spliterators;
-import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -24,8 +23,6 @@ import org.neo4j.driver.Transaction;
 import org.neo4j.driver.Value;
 import org.neo4j.driver.Values;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -61,12 +58,6 @@ public class MscGraphService {
 
 	@Autowired
 	ObjectMapper mapper;
-
-	@org.springframework.beans.factory.annotation.Value("${msc-viewer.graph.updateOnStartup:false}")
-	boolean updateGraphOnStartup = false;
-
-	@org.springframework.beans.factory.annotation.Value("${msc-viewer.graph.forceReloadOnStartup:false}")
-	boolean forceReloadOnStartup = false;
 
 	public GraphInfo getInfo(String mscId) {
 		try {
@@ -212,27 +203,6 @@ public class MscGraphService {
 
 		return list;
 
-	}
-
-	@EventListener(ApplicationReadyEvent.class)
-	public void updateGraphsOnStartup() {
-		if (updateGraphOnStartup) {
-
-			try {
-				TimeUnit.SECONDS.sleep(5);
-			} catch (InterruptedException e) {
-
-			}
-
-			Set<String> mscIds = mscResolver.getMscIds();
-			mscIds.stream().forEach(mscId -> {
-				try {
-					updateGraph(mscId, forceReloadOnStartup);
-				} catch (Exception e) {
-					log.warn("can't update graph for " + mscId, e);
-				}
-			});
-		}
 	}
 
 	public void updateGraph(String mscId, boolean force) {
@@ -382,7 +352,11 @@ public class MscGraphService {
 
 			DataProvider dataProvider = mscInstance.getDataProviders().get(typeName);
 			if (dataProvider != null) {
-				dataProvider.init();
+				try {
+					dataProvider.init();
+				} catch (Exception e) {
+					log.error("Can't init data provider {} {}", mscId, dataProvider, e);
+				}
 			}
 			List<Obj> list = data.get(typeName);
 			if (configType.getNode() != null && list != null) {
