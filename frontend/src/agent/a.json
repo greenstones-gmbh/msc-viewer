@@ -1,0 +1,18 @@
+[
+    {'id':'4:c067d981-c173-4560-b393-32fa5b2361f5: 551','labels': ['LAC','MSS-PROD-01'
+        ],'properties': {'NAME':'LAC100','LAC':'00100','MCC':'999','MNC':'06'
+        }
+    },
+    {'id':'4:c067d981-c173-4560-b393-32fa5b2361f5: 552','labels': ['LAC','MSS-PROD-01'
+        ],'properties': {'NAME':'LAC200','LAC':'00200','MCC':'999','MNC':'06'
+        }
+    },
+    {'id':'4:c067d981-c173-4560-b393-32fa5b2361f5: 553','labels': ['LAC','MSS-PROD-01'
+        ],'properties': {'NAME':'LAC300','LAC':'00300','MCC':'999','MNC':'06'
+        }
+    },
+    {'id':'4:c067d981-c173-4560-b393-32fa5b2361f5: 554','labels': ['LAC','MSS-PROD-01'
+        ],'properties': {'NAME':'LAC400','LAC':'00400','MCC':'999','MNC':'06'
+        }
+    }
+]

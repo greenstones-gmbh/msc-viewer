@@ -15,6 +15,7 @@ import { GraphContextProvider } from "../MscGraphContext";
 import { ConfigTypesContextProvider } from "./ConfigTypesContext";
 
 import { NavLink } from "@greenstones/qui-bootstrap";
+import { Alert } from "react-bootstrap";
 import { IconType } from "react-icons";
 import { MdFolderOpen, MdOutlineCellTower } from "react-icons/md";
 import { TbChartArea, TbSignalLte } from "react-icons/tb";
@@ -25,7 +26,7 @@ import { ConfigType } from "./ConfigType";
 import { ConfigTypeRoute } from "./ConfigTypeRoute";
 import { useConfigTypes } from "./ConfigTypesContext";
 import { useConfigTypesGraph, useGraphStyles } from "./ConfigTypesGraph";
-import { Alert } from "react-bootstrap";
+import { AppChatPage } from "../ChatPage";
 
 export function GenericApp() {
   return (
@@ -46,7 +47,7 @@ export function GenericApp() {
                 element={
                   <ConfigTypesContextProvider>
                     <GraphContextProvider>
-                      <AppLayout />
+                      <AppLayout></AppLayout>
                     </GraphContextProvider>
                   </ConfigTypesContextProvider>
                 }
@@ -54,6 +55,7 @@ export function GenericApp() {
                 <Route index element={<GenericDashboardPage />} />
                 <Route path="graph" element={<GenericGraphPage />} />
                 <Route path="map" element={<MapPage />} />
+                <Route path="chat" element={<AppChatPage />} />
                 <Route path="*" element={<ConfigTypeRoutes />} />
               </Route>
             </>

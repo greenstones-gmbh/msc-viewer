@@ -1,5 +1,6 @@
-import { Button, Nav, Navbar, Spinner } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { Nav, Navbar, Spinner } from "react-bootstrap";
+import { BsChatLeftText } from "react-icons/bs";
+import { Outlet, useParams } from "react-router-dom";
 import { useGraphContext } from "./MscGraphContext";
 
 import {
@@ -15,8 +16,9 @@ import { HiOutlineServer } from "react-icons/hi2";
 import { PiGraphBold } from "react-icons/pi";
 
 import { PropsWithChildren, ReactNode, useEffect, useRef } from "react";
-import { useMapLayers } from "./types/ConfigTypesContext";
 import { PiMapPinSimpleAreaFill } from "react-icons/pi";
+import { ApplicationAgentButton } from "../agent/AppAssistant";
+import { useMapLayers } from "./types/ConfigTypesContext";
 
 function TopNav() {
   const { mscId } = useParams();
@@ -44,6 +46,7 @@ function TopNav() {
         )}
 
         <NavLink to={`/${mscId}/graph`}>Graph</NavLink>
+        <NavLink to={`/${mscId}/chat`}>Chat</NavLink>
       </Nav>
 
       {!isPending && !graphAvailable && (
@@ -99,7 +102,10 @@ export function MssAppLayout({ sidenav }: { sidenav: ReactNode }) {
       brand={<NavbarBrand name="MSC Viewer" icon={PiGraphBold} />}
       sidenav={sidenav}
       topnav={<TopNav />}
-    />
+    >
+      <Outlet />
+      <ApplicationAgentButton />
+    </AppLayout>
   );
 }
 
@@ -152,6 +158,10 @@ export function SidebarNav({ children }: PropsWithChildren) {
         )}
         <NavLink to={`/${mscId}/graph`} icon={PiGraphBold}>
           Graph
+        </NavLink>
+
+        <NavLink to={`/${mscId}/chat`} icon={BsChatLeftText}>
+          Chat
         </NavLink>
       </Nav>
     </>

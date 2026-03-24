@@ -23,9 +23,11 @@ import org.neo4j.driver.types.Relationship;
 import org.springframework.stereotype.Component;
 
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 
 @Component
 @Setter
+@Slf4j
 public class GraphService {
 
 	@org.springframework.beans.factory.annotation.Value("${msc-viewer.neo4j.uri}")
@@ -112,6 +114,7 @@ public class GraphService {
 
 		Set<Node> nodes = new HashSet<>();
 		Set<Relationship> relationships = new HashSet<>();
+		Map<String, Object> values = new HashMap<>();
 
 		public void add(Node node) {
 			nodes.add(node);
@@ -121,11 +124,17 @@ public class GraphService {
 			relationships.add(rel);
 		}
 
+		public void add(String key, Value v) {
+			values.put(key, v.asObject());
+		}
+
 		public Map<String, Object> toMap() {
 			Map<String, Object> m = new HashMap<String, Object>();
 			m.put("nodes", nodes.stream().map(n -> convertNode(n)).collect(Collectors.toList()));
 			m.put("relationships",
 					relationships.stream().map(n -> convertRelationship(n)).collect(Collectors.toList()));
+			m.put("values",
+					values);
 			return m;
 		}
 
@@ -148,17 +157,18 @@ public class GraphService {
 						Node node = v.asNode();
 						g.add(node);
 
-					}
-					if (v.type().name().equals("RELATION")) {
+					} else if (v.type().name().equals("RELATION")) {
 						Relationship rel = v.asRelationship();
 						g.add(rel);
 
-					}
-					if (v.type().name().equals("PATH")) {
+					} else if (v.type().name().equals("PATH")) {
 						Path path = v.asPath();
 
 						path.nodes().forEach(n -> g.add(n));
 						path.relationships().forEach(n -> g.add(n));
+
+					} else {
+						g.add(k, v);
 
 					}
 

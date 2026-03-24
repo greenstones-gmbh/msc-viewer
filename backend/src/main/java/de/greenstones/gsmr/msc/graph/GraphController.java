@@ -11,15 +11,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
+@Slf4j
 public class GraphController {
 
 	@Autowired
 	GraphService graphService;
 
 	@GetMapping("/api/graph/query")
-	@CrossOrigin	
+	@CrossOrigin
 	public Map<String, Object> graph(@RequestParam String q) {
+		log.info("query {}", q);
 		List<String> gs = Arrays.asList(q.split(";")).stream().filter(s -> !s.trim().isBlank())
 				.collect(Collectors.toList());
 		return graphService.graph(gs).toMap();

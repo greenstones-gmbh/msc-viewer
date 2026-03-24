@@ -11,6 +11,8 @@ import { Column, exportToCsv } from "@greenstones/qui-core";
 import { ReactNode } from "react";
 import { MscPageHeader } from "./MscPageHeader";
 import { MscObj, MscObjListResult, useMscContext } from "./MsgObj";
+import { AssistantButton } from "@greenstones/qui-ai";
+import { ApplicationAgentButton } from "../agent/AppAssistant";
 
 export function MscListPage({
   listData,

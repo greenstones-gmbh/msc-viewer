@@ -8,9 +8,12 @@ import { IGraph, IGraphStyles } from "./Graph";
 import { fetchJson, useFetch } from "@greenstones/qui-core";
 import { Spinner } from "react-bootstrap";
 
-const GRAPH_URL = "/msc-viewer/api/graph/query";
+export const GRAPH_URL = "/msc-viewer/api/graph/query";
 
-const fetchGraph = async (url: string, query: string): Promise<IGraph> => {
+export const fetchGraph = async (
+  url: string,
+  query: string,
+): Promise<IGraph> => {
   return await fetchJson(
     url +
       "?" +
