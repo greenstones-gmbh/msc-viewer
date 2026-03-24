@@ -62,6 +62,7 @@ public class MscViewerProperties {
 	@Data
 	public static class FeatureProviderConfig {
 		String path;
+		String type;
 		String crs;
 		String key;
 		String x;

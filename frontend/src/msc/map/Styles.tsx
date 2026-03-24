@@ -25,7 +25,7 @@ const cellsAsSelectedCircleStyle = function (feature: any) {
     geometry: function (feature) {
       return new Circle(
         (feature.getGeometry() as Point).getCoordinates(),
-        feature.get("radius")
+        feature.get("radius"),
       );
     },
   });
@@ -43,7 +43,7 @@ export const cellsAsCircleStyle = function (feature: any) {
     geometry: function (feature) {
       return new Circle(
         (feature.getGeometry() as Point).getCoordinates(),
-        feature.get("radius")
+        feature.get("radius"),
       );
     },
   });
@@ -120,6 +120,29 @@ export const lacStyle = function (feature: any) {
   });
 };
 
+export const lteStyle = function (feature: any) {
+  //const c = "#ff0000";
+  //console.log(feature);
+
+  const c = stringToRGBA(feature.get("ECI"), 0.5);
+  return new Style({
+    stroke: new Stroke({
+      color: "white",
+      lineDash: [4],
+      width: 2,
+    }),
+    fill: new Fill({
+      color: c,
+    }),
+    text: new Text({
+      text: feature.get("ECI"), // 🔤 Dein Label-Text
+      font: "10px Arial", // Schriftgröße und Font
+      fill: new Fill({ color: "black" }), // Textfarbe
+      stroke: new Stroke({ color: "rgba(255, 255, 255, 0.9)", width: 2 }), // Kontrast für bessere Sichtbarkeit
+    }),
+  });
+};
+
 export const gcaStyle = function (feature: any) {
   //const c = stringToRGBA(feature.get("NAME"), 0.02);
   const c = `rgba(100, 100, 100, 0.01)`;
@@ -147,6 +170,21 @@ export const gcaSelectionStyle = function (feature: any) {
     fill: new Fill({
       color: c,
     }),
+  });
+};
+
+export const lteSelectionStyle = function (feature: any) {
+  //const c = stringToRGBA(feature.get("ECI"), 0.7);
+  //const c = `rgba(0, 0, 255, 0.1)`;
+  return new Style({
+    stroke: new Stroke({
+      color: "red",
+      lineDash: [6],
+      width: 4,
+    }),
+    // fill: new Fill({
+    //   color: c,
+    // }),
   });
 };
 
@@ -194,6 +232,10 @@ export const SelectionStyles: Record<string, Record<string, StyleLike>> = {
     cells: cellsSelectionStyle,
   },
 
+  ltes: {
+    ltes: lteSelectionStyle,
+  },
+
   lacs: {
     cells: cellStyle,
     lacs: lacSelectionStyle,
@@ -225,7 +267,7 @@ export const TypeStyles: Record<string, StyleLike> = {
   lacs: lacStyle,
   cells: cellStyle,
   "cell-coverages": cellsAsCircleStyle,
-  ltes: cellStyle,
+  ltes: lteStyle,
   "cell-lists": gcaStyle,
   gcas: gcaStyle,
   gcrefs: gcaStyle,

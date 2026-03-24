@@ -52,6 +52,12 @@ public class Utils {
         return point;
     }
 
+    @SneakyThrows
+    public static Coordinate toMercator(Coordinate c) {
+        double[] coords = latlngToMercator(c.x, c.y);
+        return new Coordinate(coords[1], coords[0]);
+    }
+
     // @SneakyThrows
     // public static List<Point> createFromLatlng(List<double[]> points) {
     // return points.stream().map(c -> pointFromLatlng(c[0], c[1])).toList();

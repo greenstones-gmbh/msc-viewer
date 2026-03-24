@@ -25,6 +25,7 @@ import de.greenstones.gsmr.msc.data.CsvDataProvider;
 import de.greenstones.gsmr.msc.data.DataProvider;
 import de.greenstones.gsmr.msc.gis.CsvFeatureProvider;
 import de.greenstones.gsmr.msc.gis.FeatureProvider;
+import de.greenstones.gsmr.msc.gis.GeoJsonFeatureProvider;
 import de.greenstones.gsmr.msc.types.ConfigType;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -84,8 +85,14 @@ public class MscViewerConfig {
 					var featureProviders = msc.getGis() != null ? msc.getGis().entrySet().stream()
 							.collect(Collectors.toMap(e -> e.getKey(), e -> {
 								FeatureProviderConfig conf = e.getValue();
-								FeatureProvider p = new CsvFeatureProvider(conf.path, conf.crs, conf.key, conf.x,
-										conf.y);
+								FeatureProvider p = null;
+								if ("geojson".equals(conf.type)) {
+									p = new GeoJsonFeatureProvider(conf.path, conf.key);
+								} else {
+									p = new CsvFeatureProvider(conf.path, conf.crs, conf.key, conf.x,
+											conf.y);
+								}
+
 								p.init();
 								return p;
 							})) : new HashMap<String, FeatureProvider>();

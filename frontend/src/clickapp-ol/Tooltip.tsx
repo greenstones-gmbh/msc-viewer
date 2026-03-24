@@ -58,6 +58,17 @@ export function Tooltip({
       setPoint(event.pixel);
       setSelection(undefined);
     });
+    map?.on("movestart", function (event) {
+      //console.log("moveestart", event);
+      setPoint(point);
+      setSelection(undefined);
+    });
+    map?.on("moveend", function (event) {
+      //console.log("moveend", event);
+
+      setPoint(point);
+      setSelection(undefined);
+    });
   }, [map]);
 
   return (
@@ -75,7 +86,8 @@ export function Tooltip({
           wordBreak: "break-word",
           overflowWrap: "break-word",
           userSelect: "none",
-          // pointerEvents: "none",
+
+          //pointerEvents: "none",
         }}
       >
         {selection &&
@@ -94,9 +106,10 @@ export function Tooltip({
 export function TooltipOverlay({ children }: PropsWithChildren) {
   return (
     <div
-      className="p-2 bg-white shadow-sm rounded mb-1 mt-2 ms-2"
+      className="p-2 bg-white shadow-sm rounded mb-1 mt-1 ms-1"
       style={{
         maxWidth: 360,
+        minWidth: 60,
         fontSize: "86%",
         zIndex: 1000,
       }}
