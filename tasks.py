@@ -46,4 +46,4 @@ def docker_build(c):
 def start_backend(c):
     c.run("docker compose up -d  msc-neo4j")
     with c.cd(f"{PROJECT_ROOT}/backend"):
-        c.run("./mvnw spring-boot:run -Dspring-boot.run.profiles=a")
+        c.run("./mvnw spring-boot:run -Dspring-boot.run.profiles=test")

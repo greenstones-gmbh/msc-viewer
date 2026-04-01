@@ -164,7 +164,7 @@ export function createQueries(
   const d = graphQueries.map((q) =>
     formatTemplate(q, { MSC: "`" + mscId + "`", ID: id }),
   );
-  console.log("createQueries", d);
+  //console.log("createQueries", d);
 
   return d;
 }

@@ -1,6 +1,6 @@
 import { Nav, Navbar, Spinner } from "react-bootstrap";
 import { BsChatLeftText } from "react-icons/bs";
-import { Outlet, useParams } from "react-router-dom";
+import { Outlet, useLocation, useParams } from "react-router-dom";
 import { useGraphContext } from "./MscGraphContext";
 
 import {
@@ -17,7 +17,7 @@ import { PiGraphBold } from "react-icons/pi";
 
 import { PropsWithChildren, ReactNode, useEffect, useRef } from "react";
 import { PiMapPinSimpleAreaFill } from "react-icons/pi";
-import { ApplicationAgentButton } from "../agent/AppAssistant";
+import { ApplicationAgentButton } from "../agent/MscViewerChatButton";
 import { useMapLayers } from "./types/ConfigTypesContext";
 
 function TopNav() {
@@ -93,6 +93,9 @@ function TopNav() {
 
 export function MssAppLayout({ sidenav }: { sidenav: ReactNode }) {
   //brand={<NavbarBrand name="MSS Viewer" icon={BsBox} />}
+  const { pathname } = useLocation();
+  const isChatPage = pathname.indexOf("/chat") !== -1;
+
   return (
     <AppLayout
       layout="brand-sidebar"
@@ -104,7 +107,7 @@ export function MssAppLayout({ sidenav }: { sidenav: ReactNode }) {
       topnav={<TopNav />}
     >
       <Outlet />
-      <ApplicationAgentButton />
+      {!isChatPage && <ApplicationAgentButton />}
     </AppLayout>
   );
 }

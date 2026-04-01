@@ -29,4 +29,17 @@ public class GraphController {
 		return graphService.graph(gs).toMap();
 	}
 
+	@GetMapping("/api/graph/queryList")
+	@CrossOrigin
+	public Object list(@RequestParam String q) {
+		log.info("query {}", q);
+		List<String> gs = Arrays.asList(q.split(";")).stream().filter(s -> !s.trim().isBlank())
+				.collect(Collectors.toList());
+
+		List<Map<String, Object>> list = graphService.list(gs);
+		log.info("query.done {}", list);
+
+		return list;
+	}
+
 }

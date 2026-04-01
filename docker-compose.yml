@@ -27,7 +27,13 @@ services:
       - msc-neo4j
   
   msc-frontend:
-    build: ./frontend
+    build: 
+      context: ./frontend
+      args:
+        OPENAI_KEY: $OPENAI_KEY
+        ANTHROPIC_KEY: $ANTHROPIC_KEY
+        AWS_BEDROCK_KEY: $AWS_BEDROCK_KEY
+        AWS_REGION: $AWS_REGION
     container_name: msc-frontend
     image: gs/msc-frontend
     ports:

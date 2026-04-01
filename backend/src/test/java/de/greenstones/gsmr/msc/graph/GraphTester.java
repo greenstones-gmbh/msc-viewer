@@ -3,7 +3,6 @@ package de.greenstones.gsmr.msc.graph;
 import java.util.Arrays;
 import java.util.List;
 
-import de.greenstones.gsmr.msc.graph.GraphService.Graph;
 import de.greenstones.gsmr.msc.parser.MscParser;
 
 public class GraphTester {
@@ -26,7 +25,6 @@ public class GraphTester {
 		{
 			List<String> asList = Arrays.asList(
 					"MATCH (b:BTS:`MSS-PROD-01`) RETURN count(b) AS cellCount");
-			var g = graphService.records(asList);
 
 		}
 

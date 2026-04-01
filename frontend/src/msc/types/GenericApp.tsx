@@ -26,7 +26,7 @@ import { ConfigType } from "./ConfigType";
 import { ConfigTypeRoute } from "./ConfigTypeRoute";
 import { useConfigTypes } from "./ConfigTypesContext";
 import { useConfigTypesGraph, useGraphStyles } from "./ConfigTypesGraph";
-import { AppChatPage } from "../ChatPage";
+import { AppChatPage } from "../../agent/ChatPage";
 
 export function GenericApp() {
   return (

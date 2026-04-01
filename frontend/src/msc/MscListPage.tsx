@@ -12,7 +12,7 @@ import { ReactNode } from "react";
 import { MscPageHeader } from "./MscPageHeader";
 import { MscObj, MscObjListResult, useMscContext } from "./MsgObj";
 import { AssistantButton } from "@greenstones/qui-ai";
-import { ApplicationAgentButton } from "../agent/AppAssistant";
+import { ApplicationAgentButton } from "../agent/MscViewerChatButton";
 
 export function MscListPage({
   listData,
