@@ -31,7 +31,7 @@ export function useMscViewerChat() {
       "create cell 12345 with lac 300",
       "create gca 99888 with vbs groups 200 and 300",
     ],
-    defaultFunctionCall: QueryGraphFunctionCall,
+    //defaultFunctionCall: QueryGraphFunctionCall,
   });
   return chat;
 }

@@ -1,28 +1,37 @@
 MscViewer for Nokia MSC/MSS
 ===
-A user-friendly, web-based interface for MSC/MSS that helps users easily access, visualize and manage relevant configurations.
+Manage Nokia MSC/MSS configurations through a modern web UI with AI-assisted analysis and automation.                                   
 
-![screenshot 1](./docs/assets/p3.png)
+![screenshot 1](./docs/assets/p3x.png)
 
 🚀 [Live Demo](https://demo.greenstones.de/msc-viewer)
 
-Since Nokia MSS/MSCs vary in versions and configurations, a one-size-fits-all UI is not practical. MscViewer is a toolkit for creating efficient and high-quality web applications for MSC/MSS, tailored to customer requirements.
+## Features
 
-MscViewer connects to the MSC via terminal, replacing manual command input with a user-friendly web interface that offers high-level functions like configuration linking, object graph and map visualizations.
+* **Configuration visualization** — browse hierarchy, relationships, and dependency graphs.
+* **Map view** — see configurations in geographical context using coordinates and coverage data.
+* **External data enrichment** — integrate labels, names, and coordinates from external systems.
+* **AI agent** — query and manage configurations using natural language, including automated MSC/MSS command generation.
+* **Detail views & export** — inspect individual objects and export data to CSV/Excel.
+* **Multi-instance management** — manage multiple MSC/MSS nodes through a single interface.
+* **Customizable** — declaratively define configurations and relationships, tailored to specific requirements such as GSM-R.
+
+## Overiew
+
+Since Nokia MSS/MSCs vary in versions and configurations, a one-size-fits-all UI is not practical. MscViewer is a toolkit for creating efficient and high-quality web applications for MSC/MSS, tailored to customer requirements — including an AI agent that adapts to the specific data and workflows.
+
+MscViewer connects to the MSC via terminal, replacing manual command input with a web interface that offers high-level functions like configuration linking, object graph and map visualizations — and an AI agent for natural language queries, automated analysis, and intelligent navigation of complex configurations.
 
 ![screenshot 2](./docs/assets/p5.png)
+
+The integrated AI agent lets you interact with MSC configurations using plain language. Ask it to find cells, location areas, GCAs, or GCREFs — it queries the underlying graph database and returns results as navigable links. When you need to make changes, describe what you want in natural language and the agent generates the corresponding MSC/MSS commands (e.g. `ZEPC`, `ZHAC`, `ZHGC`) ready to execute. It understands configuration relationships, validates referenced objects before generating commands, and asks for clarification when parameters are missing.
+
+![screenshot 3](./docs/assets/p6.png)
+
 
 The tool helps visualize configurations on a map to provide location context. Providing location information, such as coordinates or shapes, for the base objects allows the tool to calculate geographical representations of related configurations. For example, with latitude and longitude coordinates for cells and their coverage data, MscViewer can calculate shapes for location areas, GCREFs, and GCAs and put them on the map.
 
 
-## Features
-
-* Visualization of configuration hierarchy and relationships.
-* Enrich MSC data with information from external systems, such as labels, names, and coordinates.
-* Quick browsing and detail view of configurations.
-* Export to CSV/Excel.
-* Customizable for specific requirements, such as GSM-R.
-* Manage multiple MSC instances through a unified interface.
 
 
 ## 🚀 Live Demo
@@ -49,6 +58,9 @@ open http://localhost:9999/msc-viewer
 To compile and run the application:
 
 ```sh
+# copy the environment template and add your AI provider key
+cp .env.template .env
+# edit .env and set your key, e.g. OPENAI_API_KEY=sk-...
 
 # start neo4j 
 docker compose up -d  msc-neo4j
