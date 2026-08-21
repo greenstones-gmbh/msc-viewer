@@ -2,11 +2,13 @@ package de.greenstones.gsmr.msc.ssh;
 
 public class TestSshAws {
 
-	
+	private static final String HOST = "host";
+	private static final String FILE = "file";
+
 	public static void main(String[] args) {
-		
-		SshClient sshShell = new SshClient("ec2-user", "35.157.29.238", 22);
-		sshShell.setIdentityFile("/Users/artfh/.ssh/aws-eu-central-1.pem");
+
+		SshClient sshShell = new SshClient("ec2-user", HOST, 22);
+		sshShell.setIdentityFile(FILE);
 
 		sshShell.setOutputTransform(OutputTransform.createCommandTransform());
 		sshShell.setOutputSplitter(OutputSplitter.withPrompt());
@@ -15,7 +17,7 @@ public class TestSshAws {
 		sshShell.connect();
 
 		String a = sshShell.run("sleep 1 && ls");
-		String b=sshShell.run("pwd");
+		String b = sshShell.run("pwd");
 
 		sshShell.disconnect();
 
@@ -23,10 +25,7 @@ public class TestSshAws {
 		System.out.println(a);
 		System.out.println("-----");
 		System.out.println(b);
-		
+
 	}
 
-
-	
-	
 }

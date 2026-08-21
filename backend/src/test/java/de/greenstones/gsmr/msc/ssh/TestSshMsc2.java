@@ -1,16 +1,18 @@
 package de.greenstones.gsmr.msc.ssh;
 
 import de.greenstones.gsmr.msc.parser.MscParser;
-import de.greenstones.gsmr.msc.ssh.output.Output;
 
 public class TestSshMsc2 {
+
+	private static final String HOST = "host";
+	private static final String PWD = "pwd";
 
 	public static void main(String[] args) {
 
 		MscParser parser = new MscParser();
 
-		SshClient sshShell = new SshClient(null, "r4_mss2", 2222);
-		sshShell.setPassword("D2ROP76");
+		SshClient sshShell = new SshClient(null, HOST, 2222);
+		sshShell.setPassword(PWD);
 		sshShell.loadUserConfig();
 
 		sshShell.setOutputTransform(null);
@@ -19,8 +21,7 @@ public class TestSshMsc2 {
 
 		sshShell.connect();
 		String a = sshShell.run("ZEPO;");
-		
-		
+
 		sshShell.run("Z;");
 
 		sshShell.disconnect();

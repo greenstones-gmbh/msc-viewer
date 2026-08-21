@@ -4,6 +4,9 @@ import de.greenstones.gsmr.msc.parser.MscParser;
 
 public class TestSshMsc {
 
+	private static final String HOST = "host";
+	private static final String PWD = "pwd";
+
 	public static void main(String[] args) {
 
 		// JSch.setConfig("kex",
@@ -14,9 +17,8 @@ public class TestSshMsc {
 
 		MscParser parser = new MscParser();
 
-		// SshShell sshShell = new SshShell(null, "r4_mss2", 2222);
-		SshClient sshShell = new SshClient("AREAMG", "127.0.0.1", 2222);
-		sshShell.setPassword("D2ROP76");
+		SshClient sshShell = new SshClient("AREAMG", HOST, 2222);
+		sshShell.setPassword(PWD);
 
 		// sshShell.loadUserConfig();
 
