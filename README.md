@@ -112,6 +112,19 @@ With MSC Viewer, you can declaratively define the MSC configurations you want to
 ```
 
 
+### Sample Configuration and Credentials
+
+To keep the demo runnable without a real MSC/MSS, `backend/src/main/resources/application.yml` ships with **sample users, MSC instances and passwords**. The bundled instances are simulated (`simulate:`), so their hosts and credentials are never used to open an actual connection.
+
+These are development defaults and **must be replaced in a production environment**:
+
+| Property | Sample value | Notes |
+| --- | --- | --- |
+| `msc-viewer.jwt.secretKey` | committed sample key | Signs *and* verifies every access token. The value is public in this repository, so replace it before exposing the application. |
+| `msc-viewer.users` | `admin` / `admin1a!` | Application login shown in the quick-start steps above. |
+| `msc-viewer.neo4j.password` | `admin123` | Keep in sync with `NEO4J_AUTH` in `docker-compose.yml`. |
+| `msc-viewer.instances[].user` / `.password` | `user1` / `pwd1`, … | Replace with real MSC/MSS credentials — see below. |
+
 ### Connect to MSC Instances
 
 To connect to MSC instances, configure the necessary connection details such as the host, port and user credentials in the `backend/src/main/resources/application.yml`. Below is an example configuration for two MSC instances:
